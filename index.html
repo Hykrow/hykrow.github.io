@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Noam Fauverte</title>
+  <meta name="description" content="Site de Noam Fauverte — Étudiant à CentraleSupélec." />
+  <meta property="og:title" content="Noam Fauverte — Ingénierie IA, Rust & Recherche" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/assets/style.css" />
+  <script defer src="/assets/script.js"></script>
+</head>
+<body>
+  <header class="container">
+    <nav class="nav">
+      <a class="logo" href="/">NF</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Basculer le thème">☀︎</button>
+      <ul class="nav-links">
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#a-propos">À propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-col">
+        <h1>Salut, moi c’est <span class="accent">Noam Fauverte</span> 👋</h1>
+        <p class="lead">
+          Étudiant à <strong>CentraleSupélec</strong> (P27), je construis des systèmes
+          d’<strong>IA</strong> et des outils en <strong>Rust</strong>.
+        </p>
+        <ul class="bullets">
+          <li>Échange de recherche prévu à l’<strong>Université de Tokyo</strong> (avril 2026).</li>
+          <li>Créateur de <em>lamp</em> — un mini moteur d’auto-diff en <strong>Rust</strong>.</li>
+          <li>Intérêt pour l’IA et l'informatique en général (et la cosmologie).</li>
+        </ul>
+        <div class="cta-row">
+          <a class="btn" href="/projects/lamp/">Voir le projet Rust « lamp »</a>
+          <a class="btn ghost" href="https://github.com/Hykrow" target="_blank" rel="noopener">GitHub @Hykrow</a>
+        </div>
+      </div>
+      <div class="hero-col avatar">
+        <div class="avatar-circle" aria-hidden="true">N</div>
+        <p class="caption">A compléter</p>
+      </div>
+    </section>
+
+    <section id="projets" class="section">
+      <h2>Projets</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>lamp — autodiff en Rust</h3>
+          <p>Moteur d’auto‑diff et NN minimaliste en Rust : tenseurs avec <em>shape/strides/offset</em>,
+          DAG, VJP, broadcasting, matmul batched, et fonctions (ReLU, MSE, etc.). Travail toujours en cours.</p>
+          <div class="chip-row">
+            <span class="chip">Rust</span><span class="chip">Autodiff</span><span class="chip">ML</span>
+          </div>
+          <a class="btn small" href="/projects/lamp/">Lire la fiche</a>
+        </article>
+
+        <article class="card">
+          <h3>Détection oiseaux / souris</h3>
+          <p>Pipelines pour audio/vision (BirdNET, LightGBM, XGBoost), data loaders custom et
+             évaluation robuste.</p>
+          <div class="chip-row">
+            <span class="chip">Data</span><span class="chip">Audio/Vison</span>
+          </div>
+          <a class="btn small ghost" href="#" aria-disabled="true">Bientôt</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="a-propos" class="section">
+      <h2>À propos</h2>
+      <div class="about">
+        <p>
+          A compléter
+        </p>
+        <p>
+          A cilokéter
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>
+        Le plus simple : passe par mon GitHub.
+        <a href="https://github.com/Hykrow" target="_blank" rel="noopener">github.com/Hykrow</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>A completer</p>
+  </footer>
+</body>
+</html>
