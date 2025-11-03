@@ -94,79 +94,12 @@ body, .md-typeset, .md-content, .md-sidebar, .md-header {
   .md-typeset h1{font-size:1.6rem}
   .md-typeset h2{font-size:1.2rem}
 }
-/* Final layout tweaks to match the main site header exactly */
+/* Only minimal styles needed since we use shadow DOM for the header */
 
-/* Full-width topbar that matches main site */
-.site-topbar {
-  position: sticky;
-  top: 0;
-  z-index: 6;
-  width: 100%;
-  background: var(--bg);
-  padding: 2rem 1rem;
-}
-
-/* Match the container width from main site */
-.site-topbar .container {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-/* Nav layout matching main site exactly */
-.site-topbar .nav {
-  margin-bottom: 4rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* Logo size and placement from main site */
-.site-topbar .logo {
-  color: var(--text);
-  text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: 500;
-}
-
-/* Center the nav links with exact spacing */
-.site-topbar .nav-links {
-  display: flex;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-/* Link styling to match main site */
-.site-topbar .nav-links a {
-  color: var(--muted);
-  text-decoration: none;
-  border: none;
-}
-.site-topbar .nav-links a:hover {
-  color: var(--text);
-}
-
-/* Theme toggle matches main site */
-.site-topbar .theme-toggle {
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: var(--muted);
-  font-size: 1.1rem;
-  padding: 0.5rem;
-  margin-right: 0.5rem;
-}
-
-/* Keep Material header visible but adjust its position */
+/* Position the Material header below our shadow DOM header */
 .md-header {
-  display: block;
-  top: 5rem;
+  top: 6rem;
+  position: sticky;
 }
 
 /* Hide legacy floating buttons */
@@ -174,6 +107,21 @@ body, .md-typeset, .md-content, .md-sidebar, .md-header {
   display: none !important;
 }
 
-/* Inherited styles from main site */
+/* Adjust spacing for main content to account for both headers */
+.md-main {
+  margin-top: 1rem;
+}
+
+/* Keep Material theme variables mapped to site variables */
+:root {
+  --md-default-bg-color: var(--bg);
+  --md-default-fg-color: var(--text);
+  --md-typeset-color: var(--text);
+  --md-typeset-a-color: var(--text);
+  --md-default-fg-color--light: var(--muted);
+  --md-code-bg-color: var(--border);
+}
+
+/* Basic table and separator styles */
 .md-typeset table { border-color: var(--border); }
 .md-typeset hr { border-color: var(--border); opacity: .6; }

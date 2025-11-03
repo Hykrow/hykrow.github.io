@@ -88,23 +88,7 @@
     </div>
     
     
-  <header class="container site-topbar" role="banner">
-    <nav class="nav" role="navigation" aria-label="Site navigation">
-      <!-- Left: logo/initials (matches homepage) -->
-      <a class="logo" href="/" title="Retour au site">NF</a>
-
-      <!-- Theme toggle (same markup as homepage) -->
-      <button class="theme-toggle" id="themeToggle" aria-label="Basculer le thème">☀︎</button>
-
-      <!-- Centered links reuse `.nav-links` from /assets/style.css -->
-      <ul class="nav-links">
-        <li><a href="/projects/">Projets</a></li>
-        <li><a href="/about/">À propos</a></li>
-        <li><a href="/contact/">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
+  <div id="site-header-host"></div>
   
       
 
@@ -201,6 +185,51 @@
   
 </header>
     
+
+  <script>
+    class SiteHeader extends HTMLElement {
+      constructor() {
+        super();
+        const shadow = this.attachShadow({mode: 'open'});
+        
+        // Import main site styles
+        const linkElem = document.createElement('link');
+        linkElem.setAttribute('rel', 'stylesheet');
+        linkElem.setAttribute('href', '/assets/style.css');
+        
+        // Header markup exactly as it appears in index.html
+        shadow.innerHTML = `
+          <header class="container">
+            <nav class="nav">
+              <a class="logo" href="/">NF</a>
+              <button class="theme-toggle" id="themeToggle" aria-label="Basculer le thème">☀︎</button>
+              <ul class="nav-links">
+                <li><a href="/projects/">Projets</a></li>
+                <li><a href="/about/">À propos</a></li>
+                <li><a href="/contact/">Contact</a></li>
+              </ul>
+            </nav>
+          </header>
+        `;
+        
+        shadow.prepend(linkElem);
+      }
+      
+      connectedCallback() {
+        const toggle = this.shadowRoot.getElementById('themeToggle');
+        if (toggle) {
+          toggle.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            toggle.textContent = document.documentElement.classList.contains('dark') ? '☀︎' : '☾';
+          });
+        }
+      }
+    }
+    
+    // Register and mount the component
+    customElements.define('site-header', SiteHeader);
+    document.getElementById('site-header-host').innerHTML = '<site-header></site-header>';
+  </script>
 
     <div class="md-container" data-md-component="container">
       
