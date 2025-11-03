@@ -32,31 +32,36 @@
     <section class="hero">
       <h1>Noam Fauverte</h1>
       <p class="lead">
-        Étudiant à CentraleSupélec, développement système et IA
+        Étudiant-chercheur en IA · CentraleSupélec & Université de Tokyo (2026)
       </p>
       <div class="links">
-        <a href="/projects/lamp/">Projet lamp</a>
-        &nbsp;·&nbsp;
         <a href="https://github.com/Hykrow">GitHub</a>
+        &nbsp;·&nbsp;
+        <a href="mailto:noam.fauverte@student-cs.fr">Email</a>
       </div>
     </section>
 
     <section class="section">
-      <h2>Recherche actuelle</h2>
-      <p>Je travaille sur l'implémentation efficace de réseaux de neurones, en particulier sur l'auto-différentiation. L'objectif est d'optimiser le calcul du gradient :</p>
+      <h2>Recherche</h2>
+      <p>Mes travaux portent sur l'optimisation des systèmes d'apprentissage automatique, avec un focus particulier sur les techniques d'auto-différentiation pour réseaux de neurones profonds. Je m'intéresse notamment à l'implémentation efficace des calculs de gradients :</p>
       <div class="math">
-        \[\frac{\partial L}{\partial w} = \sum_{i=1}^n \frac{\partial L}{\partial y_i} \frac{\partial y_i}{\partial w}\]
+        \[\frac{\partial \mathcal{L}}{\partial \theta} = \mathbb{E}_{x \sim \mathcal{D}} \left[\nabla_\theta f_\theta(x) \cdot \nabla_f \mathcal{L}(f_\theta(x))\right]\]
       </div>
-      <p>Mon projet <code>lamp</code> implémente cette fonctionnalité en Rust, avec un focus sur la performance et la sûreté du code.</p>
+      <p>Problématiques principales :</p>
+      <ul class="bullets">
+        <li>Optimisation des graphes de calcul pour l'auto-différentiation</li>
+        <li>Implémentation bas niveau en Rust pour maximiser les performances</li>
+        <li>Parallélisation et exploitation efficace du matériel</li>
+      </ul>
     </section>
 
     <section class="section">
-      <h2>À propos</h2>
-      <ul class="bullets">
-        <li>Échange de recherche à l'Université de Tokyo (2026)</li>
-        <li>Développement système en Rust</li>
-        <li>Recherche en apprentissage automatique</li>
-      </ul>
+      <h2>Publications et Projets</h2>
+      <div class="card">
+        <h3><code>lamp</code> : Moteur d'auto-différentiation en Rust</h3>
+        <p>Framework de différentiation automatique avec focus sur la performance et la sûreté mémoire. Implémente les dernières optimisations de graphes de calcul.</p>
+        <p><a href="/projects/lamp/">Documentation</a> · <a href="https://github.com/Hykrow/lamp">Code source</a></p>
+      </div>
     </section>
 
     <section id="projets" class="section">
