@@ -48,7 +48,7 @@
     
       <link rel="stylesheet" href="/docs/lamp/stylesheets/extra.css">
     
-      <link rel="stylesheet" href="/docs/lamp/stylesheets/header-mirror.css">
+      <link rel="stylesheet" href="/docs/lamp/stylesheets/site-header-only.css">
     
     <script>__md_scope=new URL("/docs/lamp/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -80,19 +80,25 @@
       
     </div>
     
-    
-  <header class="container">
-  <nav class="nav">
-    <a class="logo" href="/">NF</a>
-    <button class="theme-toggle" id="themeToggle" aria-label="Basculer le thème">☀︎</button>
-    <ul class="nav-links">
-      <li><a href="#projets">Projets</a></li>
-      <li><a href="#a-propos">À propos</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+    <header id="site-header" class="nf-site-header" role="banner">
+  <div class="nf-container">
+    <div class="nf-left">
+      <a class="nf-logo" href="/">NF</a>
+      <!-- Si tu as un bouton thème, remets-le ici -->
+      <!-- <button class="nf-theme" aria-label="Thème">◐</button> -->
+    </div>
 
+    <nav class="nf-nav" aria-label="Navigation principale">
+      <a href="/#projects">Projets</a>
+      <a href="/#about">À propos</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+
+    <div class="nf-right"><!-- espace si besoin --></div>
+  </div>
+
+  <div class="nf-divider"></div>
+</header>
     <div class="md-container" data-md-component="container">
       
       
