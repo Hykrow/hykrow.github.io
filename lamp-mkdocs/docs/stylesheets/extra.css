@@ -94,25 +94,17 @@ body, .md-typeset, .md-content, .md-sidebar, .md-header {
   .md-typeset h1{font-size:1.6rem}
   .md-typeset h2{font-size:1.2rem}
 }
-/* Only minimal styles needed since we use shadow DOM for the header */
+/* Import du style du site principal */
+@import url('/assets/style.css');
 
-/* Position the Material header below our shadow DOM header */
-.md-header {
-  top: 6rem;
-  position: sticky;
-}
+/* Cache l'en-tête Material pour n'avoir que notre barre */
+.md-header { display: none; }
+:root { --md-header-height: 0; }
 
-/* Hide legacy floating buttons */
-.doc-back, .doc-menu {
-  display: none !important;
-}
+/* Cache le footer Material */
+.md-footer { display: none; }
 
-/* Adjust spacing for main content to account for both headers */
-.md-main {
-  margin-top: 1rem;
-}
-
-/* Keep Material theme variables mapped to site variables */
+/* Ajustements minimaux pour MkDocs Material */
 :root {
   --md-default-bg-color: var(--bg);
   --md-default-fg-color: var(--text);
@@ -121,7 +113,3 @@ body, .md-typeset, .md-content, .md-sidebar, .md-header {
   --md-default-fg-color--light: var(--muted);
   --md-code-bg-color: var(--border);
 }
-
-/* Basic table and separator styles */
-.md-typeset table { border-color: var(--border); }
-.md-typeset hr { border-color: var(--border); opacity: .6; }

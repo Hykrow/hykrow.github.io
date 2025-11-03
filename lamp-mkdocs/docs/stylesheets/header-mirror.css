@@ -1,0 +1,16 @@
+/* Décale le contenu de la doc sous la barre clonée */
+:root { --site-header-h: 0px; }
+body { padding-top: var(--site-header-h); }
+
+/* Cache header/footer Material pour un rendu "site" */
+.md-header { display: none; }
+:root { --md-header-height: 0; }
+.md-footer { display: none; }
+
+/* L'élément qui accueillera la barre (positionné en haut partout) */
+site-header-mirror {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1002;
+  display: block;
+}

@@ -29,6 +29,10 @@ plugins:
 extra_css:
   - stylesheets/brand.css
   - stylesheets/extra.css
+  - stylesheets/header-mirror.css     # <-- NOUVEAU
+
+extra_javascript:
+  - javascripts/header-mirror.js      # <-- NOUVEAU
 
 nav:
   - "← Retour au site": /
