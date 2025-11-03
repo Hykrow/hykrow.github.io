@@ -8,8 +8,10 @@
   <meta property="og:title" content="Noam Fauverte — Ingénierie IA, Rust & Recherche" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="fr_FR" />
-  <meta name="theme-color" content="#0ea5e9" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="theme-color" content="#2d3748" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
   <link rel="stylesheet" href="/assets/style.css" />
   <script defer src="/assets/script.js"></script>
 </head>
@@ -28,22 +30,34 @@
 
     <main class="container">
     <section class="hero">
-      <div class="avatar">
-        <div class="avatar-circle" aria-hidden="true">N</div>
-      </div>
-      <h1><span class="accent">Noam Fauverte</span></h1>
+      <h1>Noam Fauverte</h1>
       <p class="lead">
-        Étudiant à CentraleSupélec, passionné par l'IA et le développement système
+        Étudiant à CentraleSupélec, développement système et IA
       </p>
-      <ul class="bullets">
-        <li>Échange de recherche — Université de Tokyo (2026)</li>
-        <li>Développeur Rust & Chercheur en IA</li>
-        <li>Créateur de lamp, un moteur d'auto-différentiation</li>
-      </ul>
-      <div class="cta-row">
-        <a class="btn" href="/projects/lamp/">Découvrir lamp</a>
-        <a class="btn ghost" href="https://github.com/Hykrow" target="_blank" rel="noopener">GitHub</a>
+      <div class="links">
+        <a href="/projects/lamp/">Projet lamp</a>
+        &nbsp;·&nbsp;
+        <a href="https://github.com/Hykrow">GitHub</a>
       </div>
+    </section>
+
+    <section class="section">
+      <h2>Recherche actuelle</h2>
+      <p>Je travaille sur l'implémentation efficace de réseaux de neurones, en particulier sur l'auto-différentiation. L'objectif est d'optimiser le calcul du gradient :</p>
+      <div class="math">
+        \[\frac{\partial L}{\partial w} = \sum_{i=1}^n \frac{\partial L}{\partial y_i} \frac{\partial y_i}{\partial w}\]
+      </div>
+      <p>Mon projet <code>lamp</code> implémente cette fonctionnalité en Rust, avec un focus sur la performance et la sûreté du code.</p>
+    </section>
+
+    <section class="section">
+      <h2>À propos</h2>
+      <ul class="bullets">
+        <li>Échange de recherche à l'Université de Tokyo (2026)</li>
+        <li>Développement système en Rust</li>
+        <li>Recherche en apprentissage automatique</li>
+      </ul>
+    </section>
 
     <section id="projets" class="section">
       <h2>Projets</h2>
