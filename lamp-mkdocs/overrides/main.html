@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 
-{# On enlève l'en-tête Material #}
-{# Replace the Material header with our site header (in-flow, non-sticky) #}
+{# On remplace le header Material par NOTRE barre, au bon niveau (full width) #}
 {% block header %}
-  {% include "partials/site-header.html" %}
+  <site-header-mirror></site-header-mirror>
 {% endblock %}
 
+{# Le reste du contenu de la doc #}
 {% block content %}
   {{ super() }}
 {% endblock %}

@@ -1,4 +1,6 @@
-// Copie la barre du site dans le flux (non-sticky) + Fallback CSS horizontal.
+// Barre identique à la home, insérée dans le slot header (plein écran), non-sticky.
+// On privilégie /partials/header.html si tu l'ajoutes ; sinon on extrait l'en-tête de "/".
+
 class SiteHeaderMirror extends HTMLElement {
   async connectedCallback() {
     const shadow = this.attachShadow({ mode: 'open' });
@@ -11,8 +13,8 @@ class SiteHeaderMirror extends HTMLElement {
       return null;
     };
 
-    // 1) Récupère le HTML exact de la barre
-    let headerHTML = await fetchText('/partials/header.html'); // si dispo
+    // 1) HTML de la barre
+    let headerHTML = await fetchText('/partials/header.html');
     if (!headerHTML) {
       const home = await fetchText('/');
       if (home) {
@@ -26,28 +28,22 @@ class SiteHeaderMirror extends HTMLElement {
       }
     }
 
-    // 2) Fallback CSS (mini) pour forcer une nav horizontale si aucune CSS du site
-    const fallbackCSS = `
-      :host { all: initial; display: block; }
-      .wrap { all: unset; display: block; }
-      /* Enlève les puces et marges par défaut */
-      .wrap ul, .wrap ol { list-style: none; margin: 0; padding: 0; }
-      /* Nav horizontale dans les cas courants */
-      .wrap nav ul,
-      .wrap .nav,
-      .wrap .navbar,
-      .wrap .menu,
-      .wrap .links {
-        display: flex; align-items: center; gap: 20px; flex-wrap: wrap;
-      }
-      .wrap a { text-decoration: none; }
-    `;
-
-    // 3) CSS du site (appliquée dans le Shadow, donc pas de fuite)
+    // 2) CSS du site à appliquer DANS le Shadow DOM (pas de fuite)
     const siteCSS = [];
     const cssRoot = await fetchText('/style.css');        if (cssRoot)   siteCSS.push(cssRoot);
     const cssAssets = await fetchText('/assets/style.css'); if (cssAssets) siteCSS.push(cssAssets);
     const cssAll = siteCSS.join('\n');
+
+    // 3) Fallback CSS ultra-minimal (uniquement si les CSS du site ne sont pas trouvées)
+    const fallbackCSS = `
+      :host { all: initial; display: block; }
+      .wrap { all: unset; display: block; }
+      .wrap nav ul, .wrap .nav, .wrap .navbar, .wrap .menu, .wrap .links {
+        display: flex; align-items: center; gap: 20px; flex-wrap: wrap;
+      }
+      .wrap ul, .wrap ol { list-style: none; margin: 0; padding: 0; }
+      .wrap a { text-decoration: none; }
+    `;
 
     // 4) Injection
     shadow.innerHTML = `
@@ -56,9 +52,10 @@ class SiteHeaderMirror extends HTMLElement {
     `;
     if (cssAll) {
       const style = document.createElement('style');
-      style.textContent = cssAll;          // le CSS du site override le fallback
+      style.textContent = cssAll;   // Override le fallback avec TES styles exacts
       shadow.appendChild(style);
     }
   }
 }
+
 customElements.define('site-header-mirror', SiteHeaderMirror);
