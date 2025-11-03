@@ -94,35 +94,20 @@ body, .md-typeset, .md-content, .md-sidebar, .md-header {
   .md-typeset h1{font-size:1.6rem}
   .md-typeset h2{font-size:1.2rem}
 }
-/* Anti style vertical qui fuyait depuis le site */
-:root, html, body, .md-content, .md-content *,
-.md-typeset, .md-typeset * {
-  writing-mode: horizontal-tb !important;
-  text-orientation: mixed !important;
-  transform: none !important;
-  rotate: 0 !important;
-  white-space: normal !important;
-  word-break: normal !important;
-  overflow-wrap: anywhere;
-}
+/* Final layout tweaks (minimal and safe)
+   - Ensure the topbar we injected is visible and positioned above Material header
+   - Keep Material header visible and don't use floating buttons
+*/
 
-/* Confort de lecture */
-.md-typeset { max-width: 72ch; margin: 2rem auto; line-height: 1.75; }
-.md-content__inner { padding-top: 1.5rem; padding-bottom: 2rem; }
+/* Topbar container (reuses `.nav` classes from main site but ensure stacking) */
+.site-topbar{position:sticky;top:0;z-index:6;background:transparent;padding:.6rem 0}
 
-/* Titres compacts */
-.md-typeset h1 { font-size: 2rem; font-weight: 700; margin: 0 0 1rem; }
-.md-typeset h2 { font-size: 1.35rem; font-weight: 650; margin: 1.6rem 0 .8rem; }
+/* Keep the Material header visible (don't hide it) */
+.md-header{display:block}
 
-/* Masquer la barre Material + corriger layout */
-.md-header { display: none; }
-:root { --md-header-height: 0; }
-.md-main__inner { margin-top: 0; }
+/* Avoid floating 'back' buttons (they were part of legacy overrides). Hide selectors if present. */
+.doc-back,.doc-menu{display:none!important}
 
-/* Boutons flottants */
-.doc-back { position: fixed; top: 16px; left: 16px; z-index: 1001; }
-.doc-menu { position: fixed; top: 16px; right: 16px; z-index: 1001; }
-
-/* Tables & blocs */
-.md-typeset table { border-color: var(--border); }
-.md-typeset hr { border-color: var(--border); opacity: .6; }
+/* Tables & separators follow the site border variable */
+.md-typeset table{border-color:var(--border)}
+.md-typeset hr{border-color:var(--border);opacity:.6}
