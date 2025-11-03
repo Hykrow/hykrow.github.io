@@ -1,0 +1,33 @@
+site_name: "lamp — Documentation"
+site_dir: ../site/lamp
+site_author: "Noam Fauverte"
+
+theme:
+  name: material
+  palette:
+    scheme: default
+  features:
+    - navigation.instant
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - codehilite
+
+extra_css:
+  - css/extra.css
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Quickstart: quickstart.md
+  - Maths: maths.md
+  - Architecture: architecture.md
+  - API: api.md
+  - Tutoriels: tutorials.md
+  - Benchmarks: benchmarks.md
+  - Roadmap: roadmap.md
