@@ -1,10 +1,34 @@
-/* Minimal integration CSS for MkDocs Material
-   - Don't override layout grid or core material styles
-   - Constrain readable content width to match main site
-   - Keep colors inherited from Material theme variables
+/* Extra CSS pour MkDocs Material — lamp docs
+   - Empêche tout style "vertical" hérité du site principal
+   - Largeur de lecture confortable
+   - N'altère pas la grille ni les variables du thème
 */
 
-/* Constrain article content to readable measure */
+/* 1) HARD RESET contre l'écriture verticale importée du site */
+:root, html, body,
+.md-content, .md-content *,
+.md-typeset, .md-typeset * {
+  writing-mode: horizontal-tb !important;
+  text-orientation: mixed !important;
+  transform: none !important;
+  rotate: 0 !important;
+}
+
+/* S'assure que titres et paragraphes restent horizontaux */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6,
+.md-typeset p {
+  writing-mode: horizontal-tb !important;
+  text-orientation: mixed !important;
+  transform: none !important;
+  rotate: 0 !important;
+}
+
+/* 2) Mise en page lecture */
 .md-typeset {
   max-width: 65ch;
   margin: 2rem auto;
@@ -17,7 +41,7 @@
   padding-bottom: 1.5rem;
 }
 
-/* Make titles feel more like blog headings */
+/* 3) Titres "blog" */
 .md-typeset h1 {
   font-size: 2rem;
   font-weight: 700;
@@ -30,7 +54,7 @@
   margin-top: 1.5rem;
 }
 
-/* Keep header and nav untouched by default, but ensure background follows theme */
+/* 4) Ne pas toucher à l'entête/nav/footer, garder les couleurs du thème */
 .md-header,
 .md-nav,
 .md-footer,
@@ -38,13 +62,18 @@
   background: inherit;
 }
 
-/* Code blocks: subtle */
+/* 5) Code blocks */
 .md-typeset code,
 .md-typeset pre {
-  background: rgba(0,0,0,0.06);
+  background: rgba(0, 0, 0, 0.06);
   border-radius: 6px;
   padding: 0.15rem 0.3rem;
 }
 
-/* Small helper: display the repo icon at header right (Material already does this)
-   and keep default Material layout for stability */
+/* 6) Corrige d'éventuelles césures agressives héritées */
+.md-typeset,
+.md-typeset * {
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: anywhere;
+}
