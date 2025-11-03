@@ -1,0 +1,12 @@
+/* Ajustements minimes pour le thème Material */
+.md-typeset {
+  font-size: 1rem;
+}
+
+.md-typeset h1 {
+  font-weight: 500;
+}
+
+.md-nav__link {
+  color: var(--md-typeset-color);
+}
