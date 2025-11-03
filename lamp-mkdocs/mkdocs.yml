@@ -5,23 +5,19 @@ site_dir: ../docs/lamp
 
 theme:
   name: material
-  custom_dir: overrides          # <-- on active nos overrides
+  custom_dir: overrides
   features:
     - navigation.instant
     - navigation.tracking
-    - navigation.indexes         # pages d’index de section (utile pour "Blog")
+    - navigation.indexes
     - content.code.copy
+  # Thème uniquement sombre (comme ton site)
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: custom            # nous allons mapper vers tes couleurs
-      accent: custom
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+    - scheme: slate
       primary: custom
       accent: custom
   font:
-    text: false                  # pas de Google Fonts; on met nos fontes via CSS
+    text: false
     code: false
   icon:
     logo: material/chevron-left
@@ -31,8 +27,8 @@ plugins:
   - search
 
 extra_css:
-  - stylesheets/brand.css        # couleurs + polices venant de ton site
-  - stylesheets/extra.css        # resets + confort de lecture
+  - stylesheets/brand.css
+  - stylesheets/extra.css
 
 nav:
   - "← Retour au site": /
@@ -46,3 +42,4 @@ nav:
   - Tutoriels: tutorials.md
   - Benchmarks: benchmarks.md
   - Roadmap: roadmap.md
+  

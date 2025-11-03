@@ -1,33 +1,93 @@
-/* === Brand bridge: reprend couleurs + polices du site principal === */
+/* === Bridge de marque : reprend le look du site principal (dark sobre) === */
 
-/* Optionnel : si ton site expose un fichier de fontes propre
-   (sans resets globaux), décommente la ligne suivante : */
-/* @import url('/assets/fonts.css'); */
-
-/* Définis tes couleurs "marque" si tu veux les centraliser ici */
+/* Palette (adapte si tu veux) */
 :root {
-  /* Exemple : remplace par les couleurs de ton site */
-  --brand-primary: #8b5cf6; /* violet */
-  --brand-accent:  #22d3ee; /* cyan */
-  --brand-bg:      #0b0e14; /* fond sombre */
-  --brand-fg:      #e5e7eb; /* texte */
+  --bg: #0f0f10;           /* fond principal */
+  --surface: #151617;      /* cartes/menu */
+  --border: #2a2c2e;       /* traits/bordures */
+  --fg: #e5e7eb;           /* texte principal */
+  --fg-muted: #a1a1aa;     /* texte secondaire */
+  --accent: #d6de8d;       /* accent « vert-jaune » discret */
 }
 
-/* Map vers les variables Material */
+/* Map vers Material */
 :root {
-  --md-primary-fg-color: var(--brand-primary);
-  --md-accent-fg-color:  var(--brand-accent);
-  --md-default-bg-color: var(--brand-bg);
-  --md-default-fg-color: var(--brand-fg);
+  --md-default-bg-color: var(--bg);
+  --md-default-fg-color: var(--fg);
+  --md-primary-fg-color: var(--accent);
+  --md-accent-fg-color:  var(--accent);
 
-  /* Polices : adapte selon ton site */
+  --md-code-bg-color: #0c0d0f;
+  --md-code-fg-color: #e5e7eb;
+
   --md-text-font: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
   --md-code-font: ui-monospace, "JetBrains Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "DejaVu Sans Mono", monospace;
 }
 
-.md-typeset { font-family: var(--md-text-font); }
-.md-typeset code,
-.md-typeset pre { font-family: var(--md-code-font); }
+.md-container,
+.md-main,
+.md-sidebar,
+.md-nav,
+.md-content {
+  background: var(--bg);
+}
 
-/* Petites touches pour rapprocher le look du site principal */
-.md-container { background: var(--md-default-bg-color); }
+/* Typo proche du site */
+.md-typeset { font-family: var(--md-text-font); color: var(--fg); }
+.md-typeset h1, .md-typeset h2, .md-typeset h3 { letter-spacing: .2px; }
+
+/* Liens : soulignés, couleur accent, offset propre */
+.md-typeset a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.md-typeset a:hover { opacity: .9; }
+
+/* Code blocks */
+.md-typeset code, .md-typeset pre {
+  background: var(--md-code-bg-color);
+  color: var(--md-code-fg-color);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+/* Sidebar/nav : tons sombres + sélection nette */
+.md-sidebar, .md-nav {
+  background: var(--bg);
+}
+.md-nav__link { color: var(--fg-muted); }
+.md-nav__link--active, .md-nav__item--active > .md-nav__link {
+  color: var(--fg);
+  font-weight: 600;
+}
+
+/* Masquer le footer Material pour un rendu plus « site » */
+.md-footer { display: none; }
+
+/* Petits boutons « ghost » alignés au style du site */
+.btn-ghost {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--fg);
+  border-radius: 8px;
+  padding: .45rem .7rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background .15s ease, border-color .15s ease, color .15s ease;
+}
+.btn-ghost:hover { background: #181a1b; border-color: #3a3d3f; }
+
+/* Burger rond mais ghost */
+.doc-menu {
+  width: 40px; height: 40px;
+  display: inline-flex;
+  align-items: center; justify-content: center;
+  border-radius: 999px;
+}
+.doc-menu::before {
+  content: "≡";
+  font-weight: 800;
+  line-height: 1;
+}
