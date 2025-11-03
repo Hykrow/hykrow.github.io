@@ -1,23 +1,16 @@
-/* Décale le contenu de la doc sous la barre clonée */
-:root { --site-header-h: 0px; }
-body { padding-top: var(--site-header-h); }
-
-/* Cache header/footer Material pour un rendu "site" */
+/* Masquer les éléments Material qu'on ne veut pas */
 .md-header { display: none; }
-:root { --md-header-height: 0; }
 .md-footer { display: none; }
 
-/* L'élément qui accueillera la barre (positionné en haut partout) */
-site-header-mirror {
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  z-index: 1002;
-  display: block;
-  padding: 2rem 1rem; /* Même padding que le site principal */
-  background: var(--bg);
+/* Réinitialiser les variables Material qui pourraient interférer */
+:root { 
+  --md-header-height: 0;
 }
 
-/* On réinitialise certains styles Material qui pourraient interférer */
-.md-main { 
-  margin-top: 2rem;
+/* Conteneur du header cloné */
+.header-wrap {
+  background: var(--bg);
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
 }
