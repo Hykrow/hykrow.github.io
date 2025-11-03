@@ -159,12 +159,19 @@ a:hover {
 }
 
 /* Style pour les formules mathématiques */
-.katex-display {
+.math-display {
   margin: 2rem 0;
-  overflow-x: auto;
-  background: var(--bg);
   padding: 1rem;
+  overflow-x: auto;
   border-left: 2px solid var(--border);
+}
+
+.katex-display {
+  margin: 0 !important;
+}
+
+.katex {
+  font-size: 1.1em;
 }
 
 code {

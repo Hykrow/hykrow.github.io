@@ -1,18 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Rendu des formules mathématiques
-  document.querySelectorAll('.math').forEach(element => {
-    const texContent = element.textContent.trim();
-    const mathContent = texContent.replace(/^\$\$|\$\$$/g, '');
-    try {
-      katex.render(mathContent, element, {
-        displayMode: true,
-        throwOnError: false,
-        strict: false,
-        output: 'html'
-      });
-    } catch (e) {
-      console.error('Erreur KaTeX:', e);
-      element.textContent = texContent;
+  // Configuration du rendu LaTeX
+  renderMathInElement(document.body, {
+    delimiters: [
+      {left: "\\[", right: "\\]", display: true},
+      {left: "\\(", right: "\\)", display: false},
+      {left: "$", right: "$", display: false},
+      {left: "$$", right: "$$", display: true}
+    ],
+    throwOnError: false,
+    strict: false,
+    trust: true,
+    macros: {
+      "\\mathbb": "\\mathbb",
+      "\\mathcal": "\\mathcal"
     }
   });
 
