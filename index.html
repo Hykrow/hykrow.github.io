@@ -10,8 +10,7 @@
   <meta property="og:locale" content="fr_FR" />
   <meta name="theme-color" content="#2d3748" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
   <link rel="stylesheet" href="/assets/style.css" />
   <script defer src="/assets/script.js"></script>
 </head>
@@ -45,7 +44,7 @@
       <h2>Recherche</h2>
       <p>Mes travaux portent sur l'optimisation des systèmes d'apprentissage automatique, avec un focus particulier sur les techniques d'auto-différentiation pour réseaux de neurones profonds. Je m'intéresse notamment à l'implémentation efficace des calculs de gradients :</p>
       <div class="math">
-        \[\frac{\partial \mathcal{L}}{\partial \theta} = \mathbb{E}_{x \sim \mathcal{D}} \left[\nabla_\theta f_\theta(x) \cdot \nabla_f \mathcal{L}(f_\theta(x))\right]\]
+        $$\frac{\partial L}{\partial w} = \sum_{i=1}^n \frac{\partial L}{\partial y_i} \frac{\partial y_i}{\partial w}$$
       </div>
       <p>Problématiques principales :</p>
       <ul class="bullets">
