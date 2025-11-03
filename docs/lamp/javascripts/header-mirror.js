@@ -41,8 +41,35 @@ class SiteHeaderMirror extends HTMLElement {
     shadow.innerHTML = `
       <style>
         /* Reset léger du host pour éviter les interférences */
-        :host { all: initial; display:block; position:fixed; top:0; left:0; right:0; z-index:1002; }
-        .wrap { all: unset; display:block; }
+        :host { 
+          all: initial; 
+          display: block; 
+          position: fixed; 
+          top: 0; 
+          left: 0; 
+          right: 0; 
+          z-index: 1002;
+          font-size: 16px;
+          line-height: 1.6;
+          background: var(--bg);
+          color: var(--text);
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+        .wrap { 
+          all: unset; 
+          display: block;
+          padding: 2rem 1rem;
+        }
+        /* Réapplique les styles exacts du site */
+        .container {
+          max-width: 1000px;
+          margin: 0 auto;
+        }
+        .nav {
+          margin-bottom: 4rem;
+          padding-bottom: 1rem;
+          border-bottom: 1px solid var(--border);
+        }
       </style>
       <div class="wrap">${headerHTML || ''}</div>
     `;
