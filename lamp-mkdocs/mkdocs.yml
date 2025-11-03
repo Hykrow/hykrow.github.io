@@ -1,6 +1,7 @@
 site_name: "lamp — Documentation"
 site_dir: ../docs/lamp
 site_author: "Noam Fauverte"
+site_url: https://hykrow.github.io/docs/lamp/
 
 theme:
   name: material
