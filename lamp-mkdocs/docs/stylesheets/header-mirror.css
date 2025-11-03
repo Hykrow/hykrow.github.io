@@ -14,3 +14,43 @@
   margin-bottom: 2rem;
   border-bottom: 1px solid var(--border);
 }
+
+/* Force la nav à se comporter exactement comme sur la page principale */
+header.container .nav {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 1rem;
+}
+
+header.container .nav-links {
+  display: flex !important;
+  gap: 2rem !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+header.container .nav-links li { margin: 0 !important; }
+
+header.container .logo {
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  color: var(--text) !important;
+  text-decoration: none !important;
+}
+
+header.container .theme-toggle {
+  background: none !important;
+  border: none !important;
+  color: var(--muted) !important;
+  font-size: 1.1rem !important;
+  padding: 0.25rem 0.5rem !important;
+}
+
+/* Small responsive tweak: hide center links on small screens (like site) */
+@media (max-width: 800px) {
+  header.container .nav-links { display: none !important; }
+}
