@@ -6,10 +6,10 @@ site_dir: ../docs/lamp
 theme:
   name: material
   features:
-    - navigation.sections
-    - navigation.top
-    - search.highlight
+    - navigation.instant
+    - navigation.tracking
     - content.code.copy
+    - header.autohide
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -20,6 +20,9 @@ theme:
       primary: custom
       accent: custom
   font: false
+  icon:
+    logo: material/chevron-left
+    repo: fontawesome/brands/github
 
 markdown_extensions:
   - pymdownx.highlight:
