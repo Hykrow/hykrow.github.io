@@ -1,12 +1,70 @@
-/* Ajustements minimes pour le thème Material */
+/* Variables de couleur harmonisées avec le site principal */
+:root {
+  --md-primary-fg-color: var(--bg);
+  --md-primary-fg-color--light: var(--bg);
+  --md-primary-fg-color--dark: var(--bg);
+  --md-primary-bg-color: var(--text);
+  --md-primary-bg-color--light: var(--text);
+  --md-text-color: var(--text);
+  --md-typeset-color: var(--text);
+  --md-typeset-a-color: var(--text);
+}
+
+/* Style de base */
+.md-header {
+  background-color: var(--bg);
+  color: var(--text);
+  box-shadow: none;
+  border-bottom: 1px solid var(--border);
+}
+
+.md-header__title {
+  font-weight: 600;
+}
+
+.md-header__button.md-logo {
+  padding: 0;
+}
+
+.md-nav__title {
+  display: none;
+}
+
+/* Style des liens */
+.md-nav__link {
+  color: var(--text) !important;
+}
+
+.md-nav__link:hover {
+  opacity: 0.8;
+}
+
+/* Retour au site principal */
+.md-header__back {
+  padding: 0.5rem 0.8rem;
+  display: inline-flex;
+  align-items: center;
+  color: var(--text);
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.md-header__back:hover {
+  opacity: 0.8;
+}
+
+/* Typo */
 .md-typeset {
   font-size: 1rem;
 }
 
 .md-typeset h1 {
-  font-weight: 500;
+  font-weight: 600;
+  color: var(--text);
 }
 
-.md-nav__link {
-  color: var(--md-typeset-color);
+.md-typeset h2 {
+  font-weight: 600;
+  color: var(--text);
 }

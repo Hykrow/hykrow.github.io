@@ -5,28 +5,39 @@ site_url: https://hykrow.github.io/docs/lamp/
 
 theme:
   name: material
+  custom_dir: docs/overrides
   palette:
-    # Palette toggle for automatic mode
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/brightness-auto
-        name: Switch to light mode
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
+    - scheme: default
+      primary: white
+      accent: indigo
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-    # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+    - scheme: slate
+      primary: black
+      accent: indigo
       toggle:
         icon: material/brightness-4
-        name: Switch to system preference
+        name: Switch to light mode
 
   font:
-    text: Roboto
-    code: Roboto Mono
+    text: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif"
+    code: "ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace"
+  
+  logo: assets/logo.svg
+  favicon: assets/favicon.png
+  icon:
+    repo: fontawesome/brands/github
+
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
   
   features:
     - navigation.instant

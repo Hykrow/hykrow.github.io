@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block header %}
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <!-- Retour au site principal -->
+    <a href="/" class="md-header__back">
+      ← Retour au site
+    </a>
+
+    <!-- Titre -->
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">{{ config.site_name }}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Boutons de droite (recherche, etc) -->
+    <div class="md-header__options">
+      {% if "search" in config.plugins %}
+        <label class="md-header__button md-icon" for="__search">
+          {% include ".icons/material/magnify.svg" %}
+        </label>
+      {% endif %}
+      <div class="md-search" data-md-component="search" role="dialog">
+        <label class="md-search__overlay" for="__search"></label>
+        <div class="md-search__inner" role="search">
+          <form class="md-search__form" name="search">
+            <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+          </form>
+        </div>
+      </div>
+      <div class="md-header__source">
+        <a href="{{ config.repo_url }}" title="Go to repository" class="md-source" data-md-component="source">
+          <div class="md-source__icon md-icon">
+            {% include ".icons/fontawesome/brands/github.svg" %}
+          </div>
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
+{% endblock %}
