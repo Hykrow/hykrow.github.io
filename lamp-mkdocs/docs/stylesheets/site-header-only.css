@@ -1,0 +1,84 @@
+/* === Header du site, utilisé dans la doc === */
+
+/* Couleurs/typo (réutilise celles déjà définies dans brand.css si tu veux) */
+:root{
+  --bg: #0f0f10;
+  --surface: #151617;
+  --border: #2a2c2e;
+  --fg: #e5e7eb;
+  --fg-muted: #a1a1aa;
+  --accent: #d6de8d;
+
+  /* Réglages clés : adapte uniquement ces 3 variables si nécessaire */
+  --header-h: 56px;          /* hauteur de la barre */
+  --container-w: 1100px;     /* largeur max, mets 980/1040/1120 selon ta home */
+  --side-pad: 16px;          /* padding horizontal */
+}
+
+.nf-site-header{
+  background: var(--bg);
+  color: var(--fg);
+  width: 100%;
+}
+
+/* Ligne supérieure (barre) */
+.nf-container{
+  max-width: var(--container-w);
+  margin: 0 auto;
+  height: var(--header-h);
+  display: flex;
+  align-items: center;
+  justify-content: center;        /* nav centrée */
+  gap: 16px;
+  padding: 0 var(--side-pad);
+  position: relative;
+}
+
+/* Zone gauche : logo NF + éventuels boutons */
+.nf-left{
+  position: absolute;
+  left: var(--side-pad);
+  top: 0; bottom: 0;
+  display: flex; align-items: center; gap: 10px;
+}
+
+.nf-logo{
+  display: inline-flex; align-items: center; justify-content: center;
+  height: 28px; min-width: 36px; padding: 0 8px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #1a1b1d;
+  color: var(--fg);
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: .3px;
+}
+
+/* Nav centrée */
+.nf-nav{
+  display: flex; align-items: center; gap: 24px;
+}
+.nf-nav a{
+  color: var(--fg);
+  text-decoration: none;
+  opacity: .9;
+}
+.nf-nav a:hover{
+  opacity: 1;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Ligne séparatrice sous la barre (comme ta home) */
+.nf-divider{
+  height: 1px;
+  background: var(--border);
+  max-width: var(--container-w);
+  margin: 0 auto;
+  opacity: .9;
+}
+
+/* Mobile : cache la nav si tu veux (à ajuster) */
+@media (max-width: 720px){
+  .nf-nav{ gap: 16px; }
+}

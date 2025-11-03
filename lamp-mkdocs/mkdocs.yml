@@ -29,7 +29,7 @@ plugins:
 extra_css:
   - stylesheets/brand.css
   - stylesheets/extra.css
-  - stylesheets/header-mirror.css
+  - stylesheets/site-header-only.css
 
 ## client-side header fetch no longer needed (we include server-side partial)
 # extra_javascript:

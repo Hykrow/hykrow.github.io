@@ -1,11 +1,8 @@
 {% extends "base.html" %}
 
-{# On remplace le header Material par NOTRE barre, au bon niveau (full width) #}
+{# On remplace le header Material par TA barre #}
 {% block header %}
-  <site-header-mirror></site-header-mirror>
+  {% include "partials/site-header.html" %}
 {% endblock %}
 
-{# Le reste du contenu de la doc #}
-{% block content %}
-  {{ super() }}
-{% endblock %}
+{% block content %}{{ super() }}{% endblock %}
