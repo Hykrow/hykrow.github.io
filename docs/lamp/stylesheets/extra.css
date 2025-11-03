@@ -1,7 +1,7 @@
 /* Extra CSS pour MkDocs Material — lamp docs
    - Empêche tout style "vertical" hérité du site principal
    - Largeur de lecture confortable
-   - N'altère pas la grille ni les variables du thème
+   - Supprime la barre du haut (remplacée par un bouton burger + retour via override)
 */
 
 /* 1) HARD RESET contre l'écriture verticale importée du site */
@@ -12,25 +12,14 @@
   text-orientation: mixed !important;
   transform: none !important;
   rotate: 0 !important;
-}
-
-/* S'assure que titres et paragraphes restent horizontaux */
-.md-typeset h1,
-.md-typeset h2,
-.md-typeset h3,
-.md-typeset h4,
-.md-typeset h5,
-.md-typeset h6,
-.md-typeset p {
-  writing-mode: horizontal-tb !important;
-  text-orientation: mixed !important;
-  transform: none !important;
-  rotate: 0 !important;
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: anywhere;
 }
 
 /* 2) Mise en page lecture */
 .md-typeset {
-  max-width: 65ch;
+  max-width: 68ch;
   margin: 2rem auto;
   font-size: 1rem;
   line-height: 1.75;
@@ -41,28 +30,19 @@
   padding-bottom: 1.5rem;
 }
 
-/* 3) Titres "blog" */
+/* 3) Titres */
 .md-typeset h1 {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
-
 .md-typeset h2 {
   font-size: 1.4rem;
   font-weight: 600;
   margin-top: 1.5rem;
 }
 
-/* 4) Ne pas toucher à l'entête/nav/footer, garder les couleurs du thème */
-.md-header,
-.md-nav,
-.md-footer,
-.md-content {
-  background: inherit;
-}
-
-/* 5) Code blocks */
+/* 4) Code blocks */
 .md-typeset code,
 .md-typeset pre {
   background: rgba(0, 0, 0, 0.06);
@@ -70,10 +50,45 @@
   padding: 0.15rem 0.3rem;
 }
 
-/* 6) Corrige d'éventuelles césures agressives héritées */
-.md-typeset,
-.md-typeset * {
-  white-space: normal !important;
-  word-break: normal !important;
-  overflow-wrap: anywhere;
+/* 5) Cacher la barre Material et corriger le layout */
+.md-header { display: none; }
+:root { --md-header-height: 0; }
+.md-main__inner { margin-top: 0; }
+
+/* 6) Boutons custom (ajoutés par overrides/main.html) */
+.doc-back {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1001;
+  text-decoration: none;
+  padding: .4rem .6rem;
+  border-radius: .6rem;
+  background: var(--md-primary-fg-color);
+  color: var(--md-default-bg-color);
+  font-weight: 600;
+  box-shadow: 0 4px 14px rgba(0,0,0,.25);
+}
+
+.doc-menu {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1001;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 999rem;
+  background: var(--md-primary-fg-color);
+  box-shadow: 0 4px 14px rgba(0,0,0,.25);
+  cursor: pointer;
+}
+.doc-menu::before {
+  content: "≡";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-weight: 800;
+  color: var(--md-default-bg-color);
+  font-size: 1.1rem;
 }

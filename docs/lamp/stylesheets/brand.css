@@ -1,0 +1,33 @@
+/* === Brand bridge: reprend couleurs + polices du site principal === */
+
+/* Optionnel : si ton site expose un fichier de fontes propre
+   (sans resets globaux), décommente la ligne suivante : */
+/* @import url('/assets/fonts.css'); */
+
+/* Définis tes couleurs "marque" si tu veux les centraliser ici */
+:root {
+  /* Exemple : remplace par les couleurs de ton site */
+  --brand-primary: #8b5cf6; /* violet */
+  --brand-accent:  #22d3ee; /* cyan */
+  --brand-bg:      #0b0e14; /* fond sombre */
+  --brand-fg:      #e5e7eb; /* texte */
+}
+
+/* Map vers les variables Material */
+:root {
+  --md-primary-fg-color: var(--brand-primary);
+  --md-accent-fg-color:  var(--brand-accent);
+  --md-default-bg-color: var(--brand-bg);
+  --md-default-fg-color: var(--brand-fg);
+
+  /* Polices : adapte selon ton site */
+  --md-text-font: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  --md-code-font: ui-monospace, "JetBrains Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "DejaVu Sans Mono", monospace;
+}
+
+.md-typeset { font-family: var(--md-text-font); }
+.md-typeset code,
+.md-typeset pre { font-family: var(--md-code-font); }
+
+/* Petites touches pour rapprocher le look du site principal */
+.md-container { background: var(--md-default-bg-color); }

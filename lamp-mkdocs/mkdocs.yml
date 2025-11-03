@@ -5,40 +5,40 @@ site_dir: ../docs/lamp
 
 theme:
   name: material
+  custom_dir: overrides          # <-- on active nos overrides
   features:
     - navigation.instant
     - navigation.tracking
+    - navigation.indexes         # pages d’index de section (utile pour "Blog")
     - content.code.copy
-    - header.autohide
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: custom
+      primary: custom            # nous allons mapper vers tes couleurs
       accent: custom
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: custom
       accent: custom
-  font: false
+  font:
+    text: false                  # pas de Google Fonts; on met nos fontes via CSS
+    code: false
   icon:
     logo: material/chevron-left
     repo: fontawesome/brands/github
 
-markdown_extensions:
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.superfences 
-  - attr_list
-  - pymdownx.arithmatex:
-      generic: true
-  - toc:
-      permalink: true
+plugins:
+  - search
 
 extra_css:
-  - stylesheets/extra.css
+  - stylesheets/brand.css        # couleurs + polices venant de ton site
+  - stylesheets/extra.css        # resets + confort de lecture
 
 nav:
+  - "← Retour au site": /
   - Home: index.md
+  - Blog:
+      - blog/index.md
   - Quickstart: quickstart.md
   - Maths: maths.md
   - Architecture: architecture.md

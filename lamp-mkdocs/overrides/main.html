@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{# Désactive complètement l'en-tête Material #}
+{% block header %}{% endblock %}
+
+{# Ajoute deux boutons flottants : Retour au site et menu (mobile) #}
+{% block content %}
+  <a class="doc-back" href="/">← Retour au site</a>
+  <label class="doc-menu" for="__drawer" title="Menu"></label>
+  {{ super() }}
+{% endblock %}
