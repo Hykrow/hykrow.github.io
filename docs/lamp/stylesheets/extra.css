@@ -94,20 +94,86 @@ body, .md-typeset, .md-content, .md-sidebar, .md-header {
   .md-typeset h1{font-size:1.6rem}
   .md-typeset h2{font-size:1.2rem}
 }
-/* Final layout tweaks (minimal and safe)
-   - Ensure the topbar we injected is visible and positioned above Material header
-   - Keep Material header visible and don't use floating buttons
-*/
+/* Final layout tweaks to match the main site header exactly */
 
-/* Topbar container (reuses `.nav` classes from main site but ensure stacking) */
-.site-topbar{position:sticky;top:0;z-index:6;background:transparent;padding:.6rem 0}
+/* Full-width topbar that matches main site */
+.site-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 6;
+  width: 100%;
+  background: var(--bg);
+  padding: 2rem 1rem;
+}
 
-/* Keep the Material header visible (don't hide it) */
-.md-header{display:block}
+/* Match the container width from main site */
+.site-topbar .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
-/* Avoid floating 'back' buttons (they were part of legacy overrides). Hide selectors if present. */
-.doc-back,.doc-menu{display:none!important}
+/* Nav layout matching main site exactly */
+.site-topbar .nav {
+  margin-bottom: 4rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-/* Tables & separators follow the site border variable */
-.md-typeset table{border-color:var(--border)}
-.md-typeset hr{border-color:var(--border);opacity:.6}
+/* Logo size and placement from main site */
+.site-topbar .logo {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Center the nav links with exact spacing */
+.site-topbar .nav-links {
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Link styling to match main site */
+.site-topbar .nav-links a {
+  color: var(--muted);
+  text-decoration: none;
+  border: none;
+}
+.site-topbar .nav-links a:hover {
+  color: var(--text);
+}
+
+/* Theme toggle matches main site */
+.site-topbar .theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--muted);
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+/* Keep Material header visible but adjust its position */
+.md-header {
+  display: block;
+  top: 5rem;
+}
+
+/* Hide legacy floating buttons */
+.doc-back, .doc-menu {
+  display: none !important;
+}
+
+/* Inherited styles from main site */
+.md-typeset table { border-color: var(--border); }
+.md-typeset hr { border-color: var(--border); opacity: .6; }
