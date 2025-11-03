@@ -90,28 +90,22 @@
     </div>
     
     
-  <div class="site-topbar">
-    <div class="container">
-      <nav class="nav" role="navigation" aria-label="Site navigation">
-        <!-- Small left area for logo/initials (keeps space similar to the homepage) -->
-        <div class="nav-left" style="display:inline-block;vertical-align:middle;">
-          <a href="/" title="Retour au site" style="color:inherit;text-decoration:none;font-weight:600;">NF</a>
-        </div>
+  <header class="container site-topbar" role="banner">
+    <nav class="nav" role="navigation" aria-label="Site navigation">
+      <!-- Left: logo/initials (matches homepage) -->
+      <a class="logo" href="/" title="Retour au site">NF</a>
 
-        <!-- Centered links (use same class names as site CSS) -->
-        <ul class="nav-links" style="display:inline-flex;gap:2rem;justify-content:center;margin:0 2rem;">
-          <li><a href="/projects/">Projets</a></li>
-          <li><a href="/about/">À propos</a></li>
-          <li><a href="/contact/">Contact</a></li>
-        </ul>
+      <!-- Theme toggle (same markup as homepage) -->
+      <button class="theme-toggle" id="themeToggle" aria-label="Basculer le thème">☀︎</button>
 
-        <!-- Right area reserved for utilities (theme toggle etc.) -->
-        <div class="nav-right" style="display:inline-block;vertical-align:middle;float:right;">
-          <!-- Keep empty for now; the Material header will also provide search/menu buttons -->
-        </div>
-      </nav>
-    </div>
-  </div>
+      <!-- Centered links reuse `.nav-links` from /assets/style.css -->
+      <ul class="nav-links">
+        <li><a href="/projects/">Projets</a></li>
+        <li><a href="/about/">À propos</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
   
       

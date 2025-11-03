@@ -1,37 +1,30 @@
 {% extends "base.html" %}
 
-{# Insert a small site-wide top bar (same classes as main site) above the Material header.
-   This bar uses the main site's `.nav` and `.nav-links` classes from `/assets/style.css`
-   so it will look consistent with the homepage. We then render the original Material
-   header below it by calling `super()` so nothing else breaks. #}
+{# Reuse the exact header structure from the site's `index.html` so the docs topbar
+   is identical: a `.container` header with a `.nav` that contains the logo, theme
+   toggle and the centered links. Material's header is kept below via `super()`.
+#}
 {% block header %}
-  <div class="site-topbar">
-    <div class="container">
-      <nav class="nav" role="navigation" aria-label="Site navigation">
-        <!-- Small left area for logo/initials (keeps space similar to the homepage) -->
-        <div class="nav-left" style="display:inline-block;vertical-align:middle;">
-          <a href="/" title="Retour au site" style="color:inherit;text-decoration:none;font-weight:600;">NF</a>
-        </div>
+  <header class="container site-topbar" role="banner">
+    <nav class="nav" role="navigation" aria-label="Site navigation">
+      <!-- Left: logo/initials (matches homepage) -->
+      <a class="logo" href="/" title="Retour au site">NF</a>
 
-        <!-- Centered links (use same class names as site CSS) -->
-        <ul class="nav-links" style="display:inline-flex;gap:2rem;justify-content:center;margin:0 2rem;">
-          <li><a href="/projects/">Projets</a></li>
-          <li><a href="/about/">À propos</a></li>
-          <li><a href="/contact/">Contact</a></li>
-        </ul>
+      <!-- Theme toggle (same markup as homepage) -->
+      <button class="theme-toggle" id="themeToggle" aria-label="Basculer le thème">☀︎</button>
 
-        <!-- Right area reserved for utilities (theme toggle etc.) -->
-        <div class="nav-right" style="display:inline-block;vertical-align:middle;float:right;">
-          <!-- Keep empty for now; the Material header will also provide search/menu buttons -->
-        </div>
-      </nav>
-    </div>
-  </div>
+      <!-- Centered links reuse `.nav-links` from /assets/style.css -->
+      <ul class="nav-links">
+        <li><a href="/projects/">Projets</a></li>
+        <li><a href="/about/">À propos</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
   {{ super() }}
 {% endblock %}
 
-{# Keep content unchanged: render the normal page content. Avoid floating buttons. #}
 {% block content %}
   {{ super() }}
 {% endblock %}
