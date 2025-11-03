@@ -6,16 +6,20 @@ site_dir: ../docs/lamp
 theme:
   name: material
   features:
-    - navigation.tabs
     - navigation.sections
     - navigation.top
     - search.highlight
+    - content.code.copy
   palette:
-    primary: white
-    accent: indigo
-  font:
-    text: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif
-    code: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+  font: false
 
 markdown_extensions:
   - pymdownx.highlight:
