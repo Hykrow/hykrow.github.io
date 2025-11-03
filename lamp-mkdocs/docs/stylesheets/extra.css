@@ -1,42 +1,49 @@
-/* Utilisation des variables du site principal */
-:root {
-  --md-default-fg-color: var(--text);
-  --md-default-fg-color--light: var(--muted);
-  --md-default-fg-color--lighter: var(--muted);
-  --md-default-fg-color--lightest: var(--border);
-  --md-default-bg-color: var(--bg);
-  --md-default-bg-color--light: var(--bg);
-  --md-default-bg-color--lighter: var(--bg);
-  --md-primary-fg-color: var(--bg);
-  --md-primary-fg-color--light: var(--bg);
-  --md-primary-fg-color--dark: var(--bg);
-  --md-primary-bg-color: var(--text);
-  --md-accent-fg-color: var(--text);
-  --md-typeset-color: var(--text);
-  --md-typeset-a-color: var(--text);
+/* Ajustements minimes pour s'aligner avec le site principal */
+.md-header {
+  box-shadow: none;
+  border-bottom: 1px solid var(--border);
+}
+
+.md-tabs {
+  border-bottom: 1px solid var(--border);
+}
+
+.md-nav__link {
+  color: var(--text);
+}
+
+.md-typeset {
+  font-size: 1rem;
+}
+
+.md-typeset h1 {
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.md-typeset a {
+  color: var(--text);
+  text-decoration: underline;
 }
 
 /* Le thème Material ajoutera automatiquement data-md-color-scheme="slate" en mode sombre 
    grâce à la configuration media: "(prefers-color-scheme: dark)" dans mkdocs.yml */
 
 /* Style de base */
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  line-height: 1.6;
-  background: var(--bg);
-  color: var(--text);
-}
-
-.md-main {
-  background: var(--bg);
-  color: var(--text);
-}
-
 .md-header {
-  background: var(--bg);
-  color: var(--text);
+  background-color: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
   box-shadow: none;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+/* Retour au site */
+.md-header__button.md-logo {
+  padding: 0.5rem;
+}
+
+.md-header__button.md-logo img {
+  height: 1.2rem;
 }
 
 .md-nav {
