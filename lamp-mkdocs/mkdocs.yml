@@ -6,28 +6,32 @@ site_url: https://hykrow.github.io/docs/lamp/
 theme:
   name: material
   custom_dir: docs/overrides
+  
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - toc.follow
+    - search.suggest
+    
   palette:
-    - scheme: default
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
       primary: white
       accent: indigo
       toggle:
-        icon: material/brightness-7
+        icon: material/weather-sunny
         name: Switch to dark mode
-    - scheme: slate
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
       primary: black
       accent: indigo
       toggle:
-        icon: material/brightness-4
+        icon: material/weather-night
         name: Switch to light mode
 
-  font:
-    text: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif"
-    code: "ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace"
-  
-  logo: assets/logo.svg
-  favicon: assets/favicon.png
-  icon:
-    repo: fontawesome/brands/github
+  font: false
 
   features:
     - navigation.instant
