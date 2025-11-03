@@ -1,67 +1,9 @@
-/* Masquer les éléments Material qu'on ne veut pas */
+/* Barre clonée dans le flux (non-sticky) */
+site-header-mirror { display: block; position: static; z-index: 1; }
+
+/* On masque la barre Material pour n’avoir QUE ta barre */
 .md-header { display: none; }
+:root { --md-header-height: 0; }
+
+/* Footer Material optionnel : commente cette ligne si tu le veux */
 .md-footer { display: none; }
-
-/* Réinitialiser les variables Material qui pourraient interférer */
-:root { 
-  --md-header-height: 0;
-}
-
-/* Conteneur du header cloné */
-.header-wrap {
-  background: var(--bg);
-  padding: 2rem 0;
-  margin-bottom: 2rem;
-  border-bottom: 1px solid var(--border);
-}
-
-/* Force la nav à se comporter exactement comme sur la page principale */
-header.container .nav {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-  gap: 1rem;
-}
-
-header.container .nav-links {
-  display: flex !important;
-  gap: 2rem !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  list-style: none !important;
-  align-items: center !important;
-  justify-content: center !important;
-}
-
-header.container .nav-links li { margin: 0 !important; }
-
-header.container .logo {
-  font-size: 1.1rem !important;
-  font-weight: 600 !important;
-  color: var(--text) !important;
-  text-decoration: none !important;
-}
-
-header.container .theme-toggle {
-  background: none !important;
-  border: none !important;
-  color: var(--muted) !important;
-  font-size: 1.1rem !important;
-  padding: 0.25rem 0.5rem !important;
-}
-
-/* Small responsive tweak: hide center links on small screens (like site) */
-@media (max-width: 800px) {
-  header.container .nav-links { display: none !important; }
-}
-
-/* Force la même police et taille que le site principal */
-header.container,
-header.container .nav,
-header.container .nav-links,
-header.container .logo,
-header.container .theme-toggle {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
-  font-size: 16px !important;
-  line-height: 1.6 !important;
-}
