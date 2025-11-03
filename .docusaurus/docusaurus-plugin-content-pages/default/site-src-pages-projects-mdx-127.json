@@ -1,0 +1,11 @@
+{
+  "type": "mdx",
+  "permalink": "/projects",
+  "source": "@site/src/pages/projects.mdx",
+  "title": "Projets",
+  "description": "- Autodiff Rust — DAG, VJP, broadcasting, matmul.",
+  "frontMatter": {
+    "title": "Projets"
+  },
+  "unlisted": false
+}

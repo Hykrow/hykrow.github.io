@@ -1,0 +1,11 @@
+{
+  "type": "mdx",
+  "permalink": "/contact",
+  "source": "@site/src/pages/contact.mdx",
+  "title": "Contact",
+  "description": "- Email : contact@exemple.com",
+  "frontMatter": {
+    "title": "Contact"
+  },
+  "unlisted": false
+}

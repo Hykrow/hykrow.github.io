@@ -1,0 +1,28 @@
+{
+  "id": "graphe",
+  "title": "Graphes d'autodiff",
+  "description": "",
+  "source": "@site/lamp/graphe.md",
+  "sourceDirName": ".",
+  "slug": "/graphe",
+  "permalink": "/lamp/graphe",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Graphes d'autodiff",
+    "sidebar_position": 3
+  },
+  "sidebar": "lampSidebar",
+  "previous": {
+    "title": "Formalisme mathématique - Tenseurs",
+    "permalink": "/lamp/tenseurs"
+  },
+  "next": {
+    "title": "Formalisme mathématique - Gradients",
+    "permalink": "/lamp/gradients"
+  }
+}

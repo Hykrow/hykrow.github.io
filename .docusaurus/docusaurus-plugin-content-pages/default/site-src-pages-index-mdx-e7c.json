@@ -1,0 +1,11 @@
+{
+  "type": "mdx",
+  "permalink": "/",
+  "source": "@site/src/pages/index.mdx",
+  "title": "Accueil",
+  "description": "Je m'apelle Noam Fauverte, et je suis étudiant à CentraleSupelec. (P27)",
+  "frontMatter": {
+    "title": "Accueil"
+  },
+  "unlisted": false
+}

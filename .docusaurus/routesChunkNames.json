@@ -1,0 +1,221 @@
+{
+  "/__docusaurus/debug-5ff": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/config-5ba": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/content-a2b": {
+    "__comp": "__comp---theme-debug-contentba-8-ce7",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    },
+    "__props": "__props---docusaurus-debug-content-3-c-0-be2"
+  },
+  "/__docusaurus/debug/globalData-c3c": {
+    "__comp": "__comp---theme-debug-global-dataede-0fa",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/metadata-156": {
+    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/registry-88c": {
+    "__comp": "__comp---theme-debug-registry-679-501",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/routes-000": {
+    "__comp": "__comp---theme-debug-routes-946-699",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/blog-316": {
+    "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
+    "__context": {
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-48-a-a14"
+      }
+    ],
+    "__props": "__props---blogc-15-573"
+  },
+  "/blog/2025/11/03/moteur-autodiff-4e7": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "data": {
+        "blogMetadata": "blogMetadata---blog-2025-11-03-moteur-autodifface-d1a"
+      },
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-2025-11-03-moteur-autodiff-4-d-1-606"
+  },
+  "/blog/archive-182": {
+    "__comp": "__comp---theme-blog-archive-page-9-e-4-1d8",
+    "__context": {
+      "plugin": "plugin---blog-369-22e"
+    },
+    "__props": "__props---blog-archivef-81-229"
+  },
+  "/blog/tags-287": {
+    "__comp": "__comp---theme-blog-tags-list-page-01-a-d0b",
+    "__context": {
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "__props": "__props---blog-tags-3-a-2-fa2"
+  },
+  "/blog/tags/autodiff-bff": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-48-a-a14"
+      }
+    ],
+    "__props": "__props---blog-tags-autodiff-937-7c5"
+  },
+  "/blog/tags/rust-3cc": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-48-a-a14"
+      }
+    ],
+    "__props": "__props---blog-tags-rustd-7-d-1f1"
+  },
+  "/blog/tags/tensor-3f2": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-48-a-a14"
+      }
+    ],
+    "__props": "__props---blog-tags-tensor-277-2a9"
+  },
+  "/blog/tags/vjp-2da": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-48-a-a14"
+      }
+    ],
+    "__props": "__props---blog-tags-vjp-954-ff4"
+  },
+  "/contact-b83": {
+    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__context": {
+      "plugin": "plugin---contacta-74-4e6"
+    },
+    "content": "content---contactbb-9-b35"
+  },
+  "/cv-821": {
+    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__context": {
+      "plugin": "plugin---contacta-74-4e6"
+    },
+    "content": "content---cvb-23-84d"
+  },
+  "/interets-68d": {
+    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__context": {
+      "plugin": "plugin---contacta-74-4e6"
+    },
+    "content": "content---interets-29-b-e2c"
+  },
+  "/projects-e7b": {
+    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__context": {
+      "plugin": "plugin---contacta-74-4e6"
+    },
+    "content": "content---projects-127-374"
+  },
+  "/docs-3ef": {
+    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
+    "__context": {
+      "plugin": "plugin---docsaba-d7c"
+    }
+  },
+  "/docs-e49": {
+    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
+    "__props": "__props---docs-005-788"
+  },
+  "/docs-425": {
+    "__comp": "__comp---theme-doc-roota-94-67a"
+  },
+  "/docs/intro-5ac": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-intro-0-e-3-be1"
+  },
+  "/docs/roadmap-c40": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-roadmap-0-df-a69"
+  },
+  "/lamp-991": {
+    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
+    "__context": {
+      "plugin": "plugin---lampd-84-9e7"
+    }
+  },
+  "/lamp-e1d": {
+    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
+    "__props": "__props---lamp-47-a-a0d"
+  },
+  "/lamp-f12": {
+    "__comp": "__comp---theme-doc-roota-94-67a"
+  },
+  "/lamp/gradients-99d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---lamp-gradientsd-69-4a3"
+  },
+  "/lamp/graphe-fe3": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---lamp-grapheecd-bd4"
+  },
+  "/lamp/intro-815": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---lamp-intro-487-d7f"
+  },
+  "/lamp/tenseurs-4be": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---lamp-tenseursc-7-a-a08"
+  },
+  "/-fd5": {
+    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__context": {
+      "plugin": "plugin---contacta-74-4e6"
+    },
+    "content": "content---e-7-c-0a5"
+  }
+}

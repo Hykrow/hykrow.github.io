@@ -1,0 +1,11 @@
+{
+  "type": "mdx",
+  "permalink": "/cv",
+  "source": "@site/src/pages/cv.mdx",
+  "title": "CV",
+  "description": "- CentraleSupélec — Informatique (P27)",
+  "frontMatter": {
+    "title": "CV"
+  },
+  "unlisted": false
+}

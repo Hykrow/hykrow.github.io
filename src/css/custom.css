@@ -1,0 +1,25 @@
+:root{
+  /* IBM Plex Mono partout */
+  --ifm-font-family-base: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --ifm-heading-font-family: var(--ifm-font-family-base);
+  --ifm-font-weight-base: 400;
+  --ifm-heading-font-weight: 700;
+
+  /* tes couleurs (ajuste si besoin) */
+  --ifm-color-primary: #34d399;
+  --ifm-link-color: var(--ifm-color-primary);
+}
+
+/* Titres en IBM Plex Mono dans Docs/Blog/Markdown */
+.theme-doc-title,
+.theme-doc-markdown h1, .theme-doc-markdown h2, .theme-doc-markdown h3, .theme-doc-markdown h4, .theme-doc-markdown h5, .theme-doc-markdown h6,
+.markdown h1, .markdown h2, .markdown h3, .markdown h4, .markdown h5, .markdown h6,
+.blogPostTitle, .blogPostContent h1, .blogPostContent h2, .blogPostContent h3, .blogPostContent h4, .blogPostContent h5, .blogPostContent h6,
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ifm-heading-font-family);
+  font-weight: var(--ifm-heading-font-weight);
+  font-synthesis: none; /* pas de faux gras/italique */
+}
+
+/* Le gras doit utiliser le vrai 700 */
+b, strong { font-weight: 700; font-synthesis: none; }

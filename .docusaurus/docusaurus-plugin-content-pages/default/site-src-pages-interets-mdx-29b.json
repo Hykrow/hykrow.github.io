@@ -1,0 +1,11 @@
+{
+  "type": "mdx",
+  "permalink": "/interets",
+  "source": "@site/src/pages/interets.mdx",
+  "title": "Intérêts",
+  "description": "- IA/ML, graph learning, systèmes dynamiques",
+  "frontMatter": {
+    "title": "Intérêts"
+  },
+  "unlisted": false
+}

@@ -1,0 +1,82 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "intro",
+              "path": "/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "roadmap",
+              "path": "/docs/roadmap",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/intro",
+                "label": "intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    },
+    "lamp": {
+      "path": "/lamp",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/lamp",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "gradients",
+              "path": "/lamp/gradients",
+              "sidebar": "lampSidebar"
+            },
+            {
+              "id": "graphe",
+              "path": "/lamp/graphe",
+              "sidebar": "lampSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/lamp/intro",
+              "sidebar": "lampSidebar"
+            },
+            {
+              "id": "tenseurs",
+              "path": "/lamp/tenseurs",
+              "sidebar": "lampSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "lampSidebar": {
+              "link": {
+                "path": "/lamp/intro",
+                "label": "intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}
