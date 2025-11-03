@@ -1,0 +1,7 @@
+/* Import site styles by absolute path (served from repo root). If GitHub Pages serves root, this will reuse main site CSS. */
+@import url('/assets/style.css');
+
+/* Additional small tweaks for MkDocs layout */
+.md-content {
+  max-width: 65ch;
+}
