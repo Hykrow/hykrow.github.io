@@ -1,5 +1,5 @@
 site_name: "lamp — Documentation"
-site_dir: ../site/lamp
+site_dir: ../docs/lamp
 site_author: "Noam Fauverte"
 
 theme:

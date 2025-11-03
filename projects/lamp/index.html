@@ -1,100 +1,28 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>lamp — autodiff en Rust (par Noam Fauverte)</title>
-  <meta name="description" content="lamp — mini moteur d’auto-diff en Rust avec tenseurs, DAG, VJP et fonctions de base." />
-  <link rel="stylesheet" href="/assets/style.css" />
-  <script defer src="/assets/script.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>lamp — Fiche projet</title>
+  <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
-  <header class="container">
-    <nav class="nav">
-      <a class="logo" href="/">NF</a>
-      <ul class="nav-links">
-        <li><a href="/">Accueil</a></li>
-        <li><a href="/#projets">Projets</a></li>
-      </ul>
-    </nav>
-  </header>
+  <main class="container prose">
+    <h1>lamp</h1>
+    <p class="lead">Moteur d'auto-différentiation écrit en Rust, orienté performance et sûreté mémoire.</p>
 
-  <main class="container">
-    <section class="section">
-      <h1>lamp — autodiff en Rust</h1>
-      <p class="lead">
-        <strong>lamp</strong> est un moteur minimal d’auto‑diff en Rust. Idées clés : 
-        <em>Tensor</em> (données + shape/strides/offset), <em>Trace/Node</em> (DAG),
-        VJP pour la rétroprop, broadcasting explicite, et ops linéaires (matmul 2D/batch).
-      </p>
-      <div class="chip-row">
-        <span class="chip">Rust</span><span class="chip">Autodiff</span><span class="chip">ML</span>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Installation</h2>
-      <p>Projet en développement privé. Clone :</p>
-      <pre><code>git clone git@github.com:Hykrow/engine_rs.git
-cd engine_rs
-cargo build</code></pre>
-    </section>
-
-    <section class="section">
-      <h2>Exemple rapide</h2>
-      <p>Un MLP simple sur MNIST‑like, avec calcul de gradient (style JAX) :</p>
-<pre><code class="language-rust">let (loss, grads) = value_and_grad(&params, |tr, pids| {{
-    let x = tr.input(xb.clone());
-    let y = tr.input(yb.clone());
-
-    let mut cur = ParamCursor::new(pids);
-    let l1 = Linear::bind(&mut cur);
-    let l2 = Linear::bind(&mut cur);
-    let l3 = Linear::bind(&mut cur);
-
-    let h1 = l1.apply(tr, x);
-    let z1 = relu(tr, h1);
-    let h2 = l2.apply(tr, z1);
-    let z2 = relu(tr, h2);
-    let o  = l3.apply(tr, z2);
-
-    mse(tr, o, y)
-}});</code></pre>
-      <p>
-        <em>value_and_grad</em> crée une trace, exécute le forward, puis remonte les VJP pour récupérer les gradients des paramètres.
-      </p>
-    </section>
-
-    <section class="section">
-      <h2>Design</h2>
+    <section>
+      <h2>Résumé</h2>
+      <p>lamp implémente la différentiation automatique par propagation arrière (VJP), avec un graphe de calcul compact et des primitives optimisées pour le calcul bas niveau.</p>
       <ul class="bullets">
-        <li><strong>Tensor</strong> : stockage contigu, <code>shape</code>, <code>strides</code>, <code>offset</code>, vues <em>(squeeze/unsqueeze)</em>.</li>
-        <li><strong>Trace / Node</strong> : chaque op pousse un <code>Node</code> avec ses parents et une fermeture <code>vjp</code> (<code>SmallVec</code> pour l’alloc minimale).</li>
-        <li><strong>Broadcasting</strong> : règles explicites et somme des gradients sur les axes broadcastés.</li>
-        <li><strong>Ops</strong> : <code>matmul</code> 2D/batch, <code>add</code>, <code>sub</code>, <code>hadamard</code>, <code>relu</code>, <code>mse</code>.</li>
+        <li>Rôle : Conception & implémentation</li>
+        <li>Stack : Rust, Cargo, benches (criterion)</li>
+        <li>Artefacts : repo GitHub, documentation technique</li>
       </ul>
+      <p><a href="/site/lamp/">Documentation complète</a> · <a href="https://github.com/Hykrow/lamp">Code source</a></p>
     </section>
 
-    <section class="section">
-      <h2>Roadmap</h2>
-      <ul class="bullets">
-        <li>Optimiseurs : SGD/Adam, <em>weight decay</em>.</li>
-        <li>Conv2d, pooling, normalisations.</li>
-        <li>Dataloader générique (collate custom, shuffle, <code>drop_last</code> optionnel).</li>
-        <li>GPU (expérimental) : backends wgpu/CUDA.</li>
-        <li>APIs style JAX : <code>jit</code>/<code>vmap</code> (tracing + IR).</li>
-        <li>Plus de tests unitaires (sans modules intégrés selon la préférence).</li>
-      </ul>
-    </section>
-
-    <section class="section">
-      <h2>Licence</h2>
-      <p>Par défaut, code sous MIT, sauf mention contraire.</p>
-    </section>
+      <p style="margin-top:2rem">Retour à <a href="/projects/">Projets</a>.</p>
   </main>
-
-  <footer class="container footer">
-    <p>© {now} Noam Fauverte — Projet « lamp ».</p>
-  </footer>
 </body>
 </html>
