@@ -29,10 +29,11 @@ plugins:
 extra_css:
   - stylesheets/brand.css
   - stylesheets/extra.css
-  - stylesheets/header-mirror.css     # <-- NOUVEAU
+  - stylesheets/header-mirror.css
 
-extra_javascript:
-  - javascripts/header-mirror.js      # <-- NOUVEAU
+## client-side header fetch no longer needed (we include server-side partial)
+# extra_javascript:
+#  - javascripts/header-mirror.js
 
 nav:
   - "← Retour au site": /

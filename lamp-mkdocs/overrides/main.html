@@ -1,10 +1,11 @@
 {% extends "base.html" %}
 
 {# On enlève l'en-tête Material #}
-{% block header %}{% endblock %}
+{# Replace the Material header with our site header (in-flow, non-sticky) #}
+{% block header %}
+  {% include "partials/site-header.html" %}
+{% endblock %}
 
-{# On insère notre élément custom qui va cloner la barre du site #}
 {% block content %}
-  <site-header-mirror></site-header-mirror>
   {{ super() }}
 {% endblock %}
