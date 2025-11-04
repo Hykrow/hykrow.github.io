@@ -3,41 +3,6 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/__docusaurus/debug',
-    component: ComponentCreator('/__docusaurus/debug', '5ff'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/config',
-    component: ComponentCreator('/__docusaurus/debug/config', '5ba'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/content',
-    component: ComponentCreator('/__docusaurus/debug/content', 'a2b'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/globalData',
-    component: ComponentCreator('/__docusaurus/debug/globalData', 'c3c'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/metadata',
-    component: ComponentCreator('/__docusaurus/debug/metadata', '156'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/registry',
-    component: ComponentCreator('/__docusaurus/debug/registry', '88c'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/routes',
-    component: ComponentCreator('/__docusaurus/debug/routes', '000'),
-    exact: true
-  },
-  {
     path: '/blog',
     component: ComponentCreator('/blog', '316'),
     exact: true
@@ -98,26 +63,31 @@ export default [
     exact: true
   },
   {
+    path: '/solutions',
+    component: ComponentCreator('/solutions', '619'),
+    exact: true
+  },
+  {
     path: '/docs',
-    component: ComponentCreator('/docs', '3ef'),
+    component: ComponentCreator('/docs', '3f5'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'e49'),
+        component: ComponentCreator('/docs', 'b77'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '425'),
+            component: ComponentCreator('/docs', '52a'),
             routes: [
               {
                 path: '/docs/intro',
-                component: ComponentCreator('/docs/intro', '5ac'),
+                component: ComponentCreator('/docs/intro', '9a7'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/docs/roadmap',
-                component: ComponentCreator('/docs/roadmap', 'c40'),
+                component: ComponentCreator('/docs/roadmap', '510'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }
@@ -129,37 +99,37 @@ export default [
   },
   {
     path: '/lamp',
-    component: ComponentCreator('/lamp', '991'),
+    component: ComponentCreator('/lamp', 'd3c'),
     routes: [
       {
         path: '/lamp',
-        component: ComponentCreator('/lamp', 'e1d'),
+        component: ComponentCreator('/lamp', '4f4'),
         routes: [
           {
             path: '/lamp',
-            component: ComponentCreator('/lamp', 'f12'),
+            component: ComponentCreator('/lamp', '0ee'),
             routes: [
               {
                 path: '/lamp/gradients',
-                component: ComponentCreator('/lamp/gradients', '99d'),
+                component: ComponentCreator('/lamp/gradients', '502'),
                 exact: true,
                 sidebar: "lampSidebar"
               },
               {
                 path: '/lamp/graphe',
-                component: ComponentCreator('/lamp/graphe', 'fe3'),
+                component: ComponentCreator('/lamp/graphe', '2fd'),
                 exact: true,
                 sidebar: "lampSidebar"
               },
               {
                 path: '/lamp/intro',
-                component: ComponentCreator('/lamp/intro', '815'),
+                component: ComponentCreator('/lamp/intro', '1ab'),
                 exact: true,
                 sidebar: "lampSidebar"
               },
               {
                 path: '/lamp/tenseurs',
-                component: ComponentCreator('/lamp/tenseurs', '4be'),
+                component: ComponentCreator('/lamp/tenseurs', '3ba'),
                 exact: true,
                 sidebar: "lampSidebar"
               }

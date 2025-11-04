@@ -1,0 +1,11 @@
+{
+  "type": "mdx",
+  "permalink": "/solutions",
+  "source": "@site/src/pages/solutions.mdx",
+  "title": "Solutions",
+  "description": "Contenu à venir.",
+  "frontMatter": {
+    "title": "Solutions"
+  },
+  "unlisted": false
+}
