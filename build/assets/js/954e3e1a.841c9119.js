@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknoam_site=self.webpackChunknoam_site||[]).push([[814],{6061:a=>{a.exports=JSON.parse('{"tag":{"label":"vjp","permalink":"/blog/tags/vjp","allTagsPath":"/blog/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/blog/tags/vjp","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
