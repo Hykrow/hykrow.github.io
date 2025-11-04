@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunknoam_site=self.webpackChunknoam_site||[]).push([[121],{8070:a=>{a.exports=JSON.parse('{"tags":[{"label":"rust","permalink":"/blog/tags/rust","count":1},{"label":"autodiff","permalink":"/blog/tags/autodiff","count":1},{"label":"vjp","permalink":"/blog/tags/vjp","count":1},{"label":"tensor","permalink":"/blog/tags/tensor","count":1}]}')}}]);

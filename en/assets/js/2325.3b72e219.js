@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknoam_site=self.webpackChunknoam_site||[]).push([[2325],{2325:(e,s,a)=>{a.d(s,{createPacketServices:()=>c.$});var c=a(1477);a(7960)}}]);

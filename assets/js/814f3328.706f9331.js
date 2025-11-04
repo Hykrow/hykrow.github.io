@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunknoam_site=self.webpackChunknoam_site||[]).push([[472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Moteur autodiff en Rust : design, VJP et perf","permalink":"/blog/2025/11/03/moteur-autodiff","unlisted":false,"date":"2025-11-03T00:00:00.000Z"}]}')}}]);
