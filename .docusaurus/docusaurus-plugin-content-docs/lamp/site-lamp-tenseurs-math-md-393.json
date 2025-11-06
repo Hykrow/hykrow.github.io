@@ -1,0 +1,28 @@
+{
+  "id": "tenseurs_math",
+  "title": "Formalisme mathématique - Tenseurs",
+  "description": "Un réseau de neurone fait ses opérations sur des tenseurs. (addition, multiplication, tanh, ...) On va donc chercher d'abord à tout bien implémenter pour les tenseurs.",
+  "source": "@site/lamp/tenseurs_math.md",
+  "sourceDirName": ".",
+  "slug": "/tenseurs_math",
+  "permalink": "/lamp/tenseurs_math",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": null,
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Formalisme mathématique - Tenseurs",
+    "sidebar_position": 2
+  },
+  "sidebar": "lampSidebar",
+  "previous": {
+    "title": "Introduction à l'auto-différentiation. ",
+    "permalink": "/lamp/intro"
+  },
+  "next": {
+    "title": "Détails d'implémentation - Tenseurs",
+    "permalink": "/lamp/tenseurs_impl"
+  }
+}

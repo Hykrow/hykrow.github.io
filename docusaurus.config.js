@@ -2,7 +2,6 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Noam — Blog & Projets',
@@ -14,21 +13,17 @@ const config = {
   projectName: 'hykrow.github.io',
   deploymentBranch: 'gh-pages',
 
-  i18n: { defaultLocale: 'fr', locales: ['fr'] },
+  i18n: { defaultLocale: 'fr', locales: ['fr', 'en'] },
   onBrokenLinks: 'throw',
 
-  // ⚠️ D3.9: déplace l’option de markdown "broken links" ici
-  markdown: { hooks: { onBrokenMarkdownLinks: 'warn' } },
+  markdown: { hooks: { onBrokenMarkdownLinks: 'warn' }, mermaid: true }, // 🧩 active Mermaid dans Markdown
 
-    // KaTeX + Fonts (Inter pour titres, IBM Plex Mono pour le corps façon "Cactus")
   stylesheets: [
     { href: 'https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css', type: 'text/css' },
     { href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=IBM+Plex+Mono:wght@300;400;500;600&display=swap', rel: 'stylesheet' },
-     // ← on force ce CSS global
   ],
 
-
-
+  themes: ['@docusaurus/theme-mermaid'], // 🧩 ajoute le thème Mermaid ici
 
   presets: [
     [
@@ -51,16 +46,24 @@ const config = {
     ],
   ],
 
+
   themeConfig: {
     colorMode: { respectPrefersColorScheme: true, defaultMode: 'light' },
+
+    // 🧩 style Mermaid (clair/sombre)
+  mermaid: {
+    theme: { light: 'neutral', dark: 'dark' },
+  },
+
     navbar: {
       title: 'Accueil',
       items: [
-        //{ to: '/blog', label: 'Blog', position: 'left' },
-        { to: '/projects', label: 'Projets', position: 'right'},
-        { to: '/cv', label: 'CV', position: 'right' },
-        { to: '/contact', label: 'Contact', position: 'right' },
-        { to: '/interets', label: 'Intérêts', position: 'right' },
+       { type: 'localeDropdown', position: 'right' },
+       { to: '/projects', label: 'Projets', position: 'right'},
+       { to: '/cv', label: 'CV', position: 'right' },
+       { to: '/contact', label: 'Contact', position: 'right' },
+        { to: '/interets', label: 'Intérêts', position: 'right', locale: 'fr' },
+  { to: '/interets', label: 'Interests', position: 'right', locale: 'en' },
       ],
     },
     tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 },
@@ -69,22 +72,21 @@ const config = {
       darkTheme: prismThemes.dracula,
     },
   },
+  
   plugins: [
-  [
-    '@docusaurus/plugin-content-docs',
-    {
-      id: 'lamp',                         // ID unique de l'instance
-      path: 'lamp',                       // dossier source des MD
-      routeBasePath: 'lamp',              // URL = /lamp
-      sidebarPath: require.resolve('./sidebarsLamp.js'),
-      // mêmes options Markdown que tes docs/blog (maths etc.)
-      remarkPlugins: [remarkMath],
-      rehypePlugins: [rehypeKatex],
-      showLastUpdateTime: true,
-    },
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'lamp',
+        path: 'lamp',
+        routeBasePath: 'lamp',
+        sidebarPath: require.resolve('./sidebarsLamp.js'),
+        remarkPlugins: [remarkMath],
+        rehypePlugins: [rehypeKatex],
+        showLastUpdateTime: true,
+      },
+    ],
   ],
-],
-
 };
 
 export default config;

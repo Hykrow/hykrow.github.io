@@ -1,0 +1,28 @@
+{
+  "id": "train",
+  "title": "Training & Inference",
+  "description": "We will train our model on MNIST.",
+  "source": "@site/i18n/en/docusaurus-plugin-content-docs-lamp/current/train.md",
+  "sourceDirName": ".",
+  "slug": "/train",
+  "permalink": "/en/lamp/train",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": null,
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "title": "Training & Inference",
+    "sidebar_position": 9
+  },
+  "sidebar": "lampSidebar",
+  "previous": {
+    "title": "Utils, linear layers, inits & losses",
+    "permalink": "/en/lamp/utils"
+  },
+  "next": {
+    "title": "Conclusion",
+    "permalink": "/en/lamp/conclusion"
+  }
+}

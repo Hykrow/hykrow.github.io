@@ -1,0 +1,11 @@
+{
+  "type": "mdx",
+  "permalink": "/en/projects",
+  "source": "@site/i18n/en/docusaurus-plugin-content-pages/projects.mdx",
+  "title": "Projects",
+  "description": "- Autodiff Rust — DAG, VJP, broadcasting, matmul.",
+  "frontMatter": {
+    "title": "Projects"
+  },
+  "unlisted": false
+}

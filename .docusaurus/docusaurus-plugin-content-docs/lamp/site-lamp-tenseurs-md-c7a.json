@@ -10,7 +10,7 @@
   "unlisted": false,
   "tags": [],
   "version": "current",
-  "lastUpdatedAt": 1762214241000,
+  "lastUpdatedAt": 1539502055000,
   "sidebarPosition": 2,
   "frontMatter": {
     "title": "Formalisme mathématique - Tenseurs",
@@ -22,7 +22,7 @@
     "permalink": "/lamp/intro"
   },
   "next": {
-    "title": "Graphes d'autodiff",
-    "permalink": "/lamp/graphe"
+    "title": "Opérations usuelles sur les tenseurs",
+    "permalink": "/lamp/operations"
   }
 }

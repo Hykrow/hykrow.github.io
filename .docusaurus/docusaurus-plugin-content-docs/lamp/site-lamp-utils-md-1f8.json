@@ -1,0 +1,28 @@
+{
+  "id": "utils",
+  "title": "Utilitaires à l'entrainement: couches, inits & losses",
+  "description": "Dans cette fonction, je détaille juste les utilitaires nécessaire pour faire l'entraînement (qui arrive bientôt!)",
+  "source": "@site/lamp/utils.md",
+  "sourceDirName": ".",
+  "slug": "/utils",
+  "permalink": "/lamp/utils",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": null,
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "title": "Utilitaires à l'entrainement: couches, inits & losses",
+    "sidebar_position": 8
+  },
+  "sidebar": "lampSidebar",
+  "previous": {
+    "title": "Construction du graphe",
+    "permalink": "/lamp/construction"
+  },
+  "next": {
+    "title": "Entraînement & Inférence",
+    "permalink": "/lamp/train"
+  }
+}

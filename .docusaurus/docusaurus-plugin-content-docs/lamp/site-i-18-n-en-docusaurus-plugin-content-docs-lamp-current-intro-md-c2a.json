@@ -1,0 +1,25 @@
+{
+  "id": "intro",
+  "title": "Introduction to Automatic Differentiation.",
+  "description": "Hello!",
+  "source": "@site/i18n/en/docusaurus-plugin-content-docs-lamp/current/intro.md",
+  "sourceDirName": ".",
+  "slug": "/intro",
+  "permalink": "/en/lamp/intro",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": null,
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "intro",
+    "title": "Introduction to Automatic Differentiation.",
+    "sidebar_position": 1
+  },
+  "sidebar": "lampSidebar",
+  "next": {
+    "title": "Mathematical formalism - Tensors",
+    "permalink": "/en/lamp/tenseurs_math"
+  }
+}

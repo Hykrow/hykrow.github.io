@@ -1,0 +1,28 @@
+{
+  "id": "utils",
+  "title": "Utils, linear layers, inits & losses",
+  "description": "In this function, I just detail the utilities needed to do the training (coming soon!).",
+  "source": "@site/i18n/en/docusaurus-plugin-content-docs-lamp/current/utils.md",
+  "sourceDirName": ".",
+  "slug": "/utils",
+  "permalink": "/en/lamp/utils",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": null,
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "title": "Utils, linear layers, inits & losses",
+    "sidebar_position": 8
+  },
+  "sidebar": "lampSidebar",
+  "previous": {
+    "title": "Graph construction",
+    "permalink": "/en/lamp/construction"
+  },
+  "next": {
+    "title": "Training & Inference",
+    "permalink": "/en/lamp/train"
+  }
+}

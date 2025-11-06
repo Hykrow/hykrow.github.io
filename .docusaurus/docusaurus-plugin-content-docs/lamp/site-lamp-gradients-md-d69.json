@@ -1,6 +1,6 @@
 {
   "id": "gradients",
-  "title": "Formalisme mathématique - Gradients",
+  "title": "Gradients & backward pass sur le graphe",
   "description": "Définition",
   "source": "@site/lamp/gradients.md",
   "sourceDirName": ".",
@@ -11,14 +11,18 @@
   "tags": [],
   "version": "current",
   "lastUpdatedAt": 1762214241000,
-  "sidebarPosition": 4,
+  "sidebarPosition": 6,
   "frontMatter": {
-    "title": "Formalisme mathématique - Gradients",
-    "sidebar_position": 4
+    "title": "Gradients & backward pass sur le graphe",
+    "sidebar_position": 6
   },
   "sidebar": "lampSidebar",
   "previous": {
     "title": "Graphes d'autodiff",
     "permalink": "/lamp/graphe"
+  },
+  "next": {
+    "title": "Construction du graphe",
+    "permalink": "/lamp/construction"
   }
 }

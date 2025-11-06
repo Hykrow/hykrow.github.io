@@ -1,95 +1,4 @@
 {
-  "/blog-316": {
-    "__comp": "a6aa9e1f",
-    "__context": {
-      "plugin": "36994c47"
-    },
-    "sidebar": "814f3328",
-    "items": [
-      {
-        "content": "48a4488d"
-      }
-    ],
-    "__props": "c15d9823"
-  },
-  "/blog/2025/11/03/moteur-autodiff-4e7": {
-    "__comp": "ccc49370",
-    "__context": {
-      "data": {
-        "blogMetadata": "acecf23e"
-      },
-      "plugin": "36994c47"
-    },
-    "sidebar": "814f3328",
-    "content": "4d1ce708"
-  },
-  "/blog/archive-182": {
-    "__comp": "9e4087bc",
-    "__context": {
-      "plugin": "36994c47"
-    },
-    "__props": "f81c1134"
-  },
-  "/blog/tags-287": {
-    "__comp": "01a85c17",
-    "__context": {
-      "plugin": "36994c47"
-    },
-    "sidebar": "814f3328",
-    "__props": "3a2db09e"
-  },
-  "/blog/tags/autodiff-bff": {
-    "__comp": "6875c492",
-    "__context": {
-      "plugin": "36994c47"
-    },
-    "sidebar": "814f3328",
-    "items": [
-      {
-        "content": "48a4488d"
-      }
-    ],
-    "__props": "9370daa6"
-  },
-  "/blog/tags/rust-3cc": {
-    "__comp": "6875c492",
-    "__context": {
-      "plugin": "36994c47"
-    },
-    "sidebar": "814f3328",
-    "items": [
-      {
-        "content": "48a4488d"
-      }
-    ],
-    "__props": "d7de637e"
-  },
-  "/blog/tags/tensor-3f2": {
-    "__comp": "6875c492",
-    "__context": {
-      "plugin": "36994c47"
-    },
-    "sidebar": "814f3328",
-    "items": [
-      {
-        "content": "48a4488d"
-      }
-    ],
-    "__props": "27702c14"
-  },
-  "/blog/tags/vjp-2da": {
-    "__comp": "6875c492",
-    "__context": {
-      "plugin": "36994c47"
-    },
-    "sidebar": "814f3328",
-    "items": [
-      {
-        "content": "48a4488d"
-      }
-    ],
-    "__props": "954e3e1a"
-  },
   "/contact-b83": {
     "__comp": "1f391b9e",
     "__context": {
@@ -125,39 +34,43 @@
     },
     "content": "3a091d0e"
   },
-  "/docs-3f5": {
+  "/docs-e45": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "aba21aa0"
     }
   },
-  "/docs-b77": {
+  "/docs-cc7": {
     "__comp": "a7bd4aaa",
     "__props": "0058b4c6"
   },
-  "/docs-52a": {
+  "/docs-885": {
     "__comp": "a94703ab"
   },
-  "/docs/intro-9a7": {
+  "/docs/aa-e12": {
     "__comp": "17896441",
-    "content": "0e384e19"
+    "content": "483ccbe1"
   },
-  "/docs/roadmap-510": {
-    "__comp": "17896441",
-    "content": "0dffb83e"
-  },
-  "/lamp-d3c": {
+  "/lamp-4ba": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "d84f80d2"
     }
   },
-  "/lamp-4f4": {
+  "/lamp-427": {
     "__comp": "a7bd4aaa",
     "__props": "47a25953"
   },
-  "/lamp-0ee": {
+  "/lamp-80a": {
     "__comp": "a94703ab"
+  },
+  "/lamp/conclusion-a87": {
+    "__comp": "17896441",
+    "content": "1c8ad6f9"
+  },
+  "/lamp/construction-fb5": {
+    "__comp": "17896441",
+    "content": "09d5a3d8"
   },
   "/lamp/gradients-502": {
     "__comp": "17896441",
@@ -171,9 +84,25 @@
     "__comp": "17896441",
     "content": "48714794"
   },
-  "/lamp/tenseurs-3ba": {
+  "/lamp/operations-433": {
     "__comp": "17896441",
-    "content": "c7a05fc0"
+    "content": "9a7c2ee8"
+  },
+  "/lamp/tenseurs_impl-e5f": {
+    "__comp": "17896441",
+    "content": "19d9d6ac"
+  },
+  "/lamp/tenseurs_math-ad2": {
+    "__comp": "17896441",
+    "content": "3934b472"
+  },
+  "/lamp/train-d2c": {
+    "__comp": "17896441",
+    "content": "991d62cc"
+  },
+  "/lamp/utils-240": {
+    "__comp": "17896441",
+    "content": "1f898461"
   },
   "/-fd5": {
     "__comp": "1f391b9e",

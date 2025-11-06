@@ -1,0 +1,28 @@
+{
+  "id": "operations",
+  "title": "Détails d'implémentation - opérations",
+  "description": "Ici on détaille les opérations de base. Aussi dispo en plus détaillé ici",
+  "source": "@site/lamp/operations.md",
+  "sourceDirName": ".",
+  "slug": "/operations",
+  "permalink": "/lamp/operations",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": null,
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Détails d'implémentation - opérations",
+    "sidebar_position": 4
+  },
+  "sidebar": "lampSidebar",
+  "previous": {
+    "title": "Détails d'implémentation - Tenseurs",
+    "permalink": "/lamp/tenseurs_impl"
+  },
+  "next": {
+    "title": "Graphes d'autodiff",
+    "permalink": "/lamp/graphe"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "tenseurs_impl",
+  "title": "Détails d'implémentation - Tenseurs",
+  "description": "Ici, je vais détailler l'implémentation des tenseurs. Vous pouvez retrouver le code ici",
+  "source": "@site/lamp/tenseurs_impl.md",
+  "sourceDirName": ".",
+  "slug": "/tenseurs_impl",
+  "permalink": "/lamp/tenseurs_impl",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": null,
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Détails d'implémentation - Tenseurs",
+    "sidebar_position": 3
+  },
+  "sidebar": "lampSidebar",
+  "previous": {
+    "title": "Formalisme mathématique - Tenseurs",
+    "permalink": "/lamp/tenseurs_math"
+  },
+  "next": {
+    "title": "Détails d'implémentation - opérations",
+    "permalink": "/lamp/operations"
+  }
+}

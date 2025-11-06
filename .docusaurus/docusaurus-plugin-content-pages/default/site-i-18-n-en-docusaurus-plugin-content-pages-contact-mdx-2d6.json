@@ -1,0 +1,11 @@
+{
+  "type": "mdx",
+  "permalink": "/en/contact",
+  "source": "@site/i18n/en/docusaurus-plugin-content-pages/contact.mdx",
+  "title": "Contact",
+  "description": "- Email : noam.fauverte@gmail.com",
+  "frontMatter": {
+    "title": "Contact"
+  },
+  "unlisted": false
+}

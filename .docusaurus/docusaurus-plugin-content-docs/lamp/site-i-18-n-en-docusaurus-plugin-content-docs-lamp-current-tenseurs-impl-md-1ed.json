@@ -1,0 +1,28 @@
+{
+  "id": "tenseurs_impl",
+  "title": "Implementation Details - Tensors",
+  "description": "Here, I will detail the implementation of tensors. You can find the code here",
+  "source": "@site/i18n/en/docusaurus-plugin-content-docs-lamp/current/tenseurs_impl.md",
+  "sourceDirName": ".",
+  "slug": "/tenseurs_impl",
+  "permalink": "/en/lamp/tenseurs_impl",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": null,
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Implementation Details - Tensors",
+    "sidebar_position": 3
+  },
+  "sidebar": "lampSidebar",
+  "previous": {
+    "title": "Mathematical formalism - Tensors",
+    "permalink": "/en/lamp/tenseurs_math"
+  },
+  "next": {
+    "title": "Implementation details - operations",
+    "permalink": "/en/lamp/operations"
+  }
+}

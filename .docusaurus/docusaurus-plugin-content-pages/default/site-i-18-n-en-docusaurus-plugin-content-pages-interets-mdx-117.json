@@ -1,0 +1,11 @@
+{
+  "type": "mdx",
+  "permalink": "/en/interets",
+  "source": "@site/i18n/en/docusaurus-plugin-content-pages/interets.mdx",
+  "title": "Interests",
+  "description": "- IA/ML, graphs, algorithmics",
+  "frontMatter": {
+    "title": "Interests"
+  },
+  "unlisted": false
+}

@@ -1,0 +1,24 @@
+{
+  "id": "conclusion",
+  "title": "Conclusion",
+  "description": "I trained the model for 20 minutes (5 epochs, with 6,000 training and 600 test) and obtained an accuracy of around 60-70%. The problem with the code is that it is very simple in order to be readable, but this makes it very slow. The operations need to be parallelized on the CPU (which is possible because Arc allows it), or even multiplied using the GPU. Such low accuracy can be explained by the fact that I only trained on 10% of the dataset... (and with not many epochs).",
+  "source": "@site/i18n/en/docusaurus-plugin-content-docs-lamp/current/conclusion.md",
+  "sourceDirName": ".",
+  "slug": "/conclusion",
+  "permalink": "/en/lamp/conclusion",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": null,
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "title": "Conclusion",
+    "sidebar_position": 10
+  },
+  "sidebar": "lampSidebar",
+  "previous": {
+    "title": "Training & Inference",
+    "permalink": "/en/lamp/train"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "mdx",
+  "permalink": "/en/solutions",
+  "source": "@site/i18n/en/docusaurus-plugin-content-pages/solutions.mdx",
+  "title": "Solutions",
+  "description": "Accounts",
+  "frontMatter": {
+    "title": "Solutions"
+  },
+  "unlisted": false
+}

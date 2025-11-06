@@ -1,7 +1,7 @@
 {
   "id": "graphe",
   "title": "Graphes d'autodiff",
-  "description": "",
+  "description": "Nous avons pu implémenter les opérations de base ! Bravo :)",
   "source": "@site/lamp/graphe.md",
   "sourceDirName": ".",
   "slug": "/graphe",
@@ -11,18 +11,18 @@
   "tags": [],
   "version": "current",
   "lastUpdatedAt": 1762214241000,
-  "sidebarPosition": 3,
+  "sidebarPosition": 5,
   "frontMatter": {
     "title": "Graphes d'autodiff",
-    "sidebar_position": 3
+    "sidebar_position": 5
   },
   "sidebar": "lampSidebar",
   "previous": {
-    "title": "Formalisme mathématique - Tenseurs",
-    "permalink": "/lamp/tenseurs"
+    "title": "Détails d'implémentation - opérations",
+    "permalink": "/lamp/operations"
   },
   "next": {
-    "title": "Formalisme mathématique - Gradients",
+    "title": "Gradients & backward pass sur le graphe",
     "permalink": "/lamp/gradients"
   }
 }

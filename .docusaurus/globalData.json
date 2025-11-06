@@ -8,16 +8,11 @@
           "label": "Next",
           "isLast": true,
           "path": "/docs",
-          "mainDocId": "intro",
+          "mainDocId": "aa",
           "docs": [
             {
-              "id": "intro",
-              "path": "/docs/intro",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "roadmap",
-              "path": "/docs/roadmap",
+              "id": "aa",
+              "path": "/docs/aa",
               "sidebar": "tutorialSidebar"
             }
           ],
@@ -25,8 +20,8 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/docs/intro",
-                "label": "intro"
+                "path": "/docs/aa",
+                "label": "aa"
               }
             }
           }
@@ -45,6 +40,16 @@
           "mainDocId": "intro",
           "docs": [
             {
+              "id": "conclusion",
+              "path": "/lamp/conclusion",
+              "sidebar": "lampSidebar"
+            },
+            {
+              "id": "construction",
+              "path": "/lamp/construction",
+              "sidebar": "lampSidebar"
+            },
+            {
               "id": "gradients",
               "path": "/lamp/gradients",
               "sidebar": "lampSidebar"
@@ -60,8 +65,28 @@
               "sidebar": "lampSidebar"
             },
             {
-              "id": "tenseurs",
-              "path": "/lamp/tenseurs",
+              "id": "operations",
+              "path": "/lamp/operations",
+              "sidebar": "lampSidebar"
+            },
+            {
+              "id": "tenseurs_impl",
+              "path": "/lamp/tenseurs_impl",
+              "sidebar": "lampSidebar"
+            },
+            {
+              "id": "tenseurs_math",
+              "path": "/lamp/tenseurs_math",
+              "sidebar": "lampSidebar"
+            },
+            {
+              "id": "train",
+              "path": "/lamp/train",
+              "sidebar": "lampSidebar"
+            },
+            {
+              "id": "utils",
+              "path": "/lamp/utils",
               "sidebar": "lampSidebar"
             }
           ],

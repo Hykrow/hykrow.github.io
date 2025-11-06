@@ -1,0 +1,28 @@
+{
+  "id": "train",
+  "title": "Entraînement & Inférence",
+  "description": "On va entraîner notre modèle sur MNIST.",
+  "source": "@site/lamp/train.md",
+  "sourceDirName": ".",
+  "slug": "/train",
+  "permalink": "/lamp/train",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": null,
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "title": "Entraînement & Inférence",
+    "sidebar_position": 9
+  },
+  "sidebar": "lampSidebar",
+  "previous": {
+    "title": "Utilitaires à l'entrainement: couches, inits & losses",
+    "permalink": "/lamp/utils"
+  },
+  "next": {
+    "title": "Conclusion",
+    "permalink": "/lamp/conclusion"
+  }
+}

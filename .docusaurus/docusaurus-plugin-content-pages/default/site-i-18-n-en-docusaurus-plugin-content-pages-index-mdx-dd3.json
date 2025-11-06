@@ -1,0 +1,11 @@
+{
+  "type": "mdx",
+  "permalink": "/en/",
+  "source": "@site/i18n/en/docusaurus-plugin-content-pages/index.mdx",
+  "title": "Welcome",
+  "description": "My name is Noam Fauverte, and I am a student at CentraleSupelec. (P27)",
+  "frontMatter": {
+    "title": "Welcome"
+  },
+  "unlisted": false
+}

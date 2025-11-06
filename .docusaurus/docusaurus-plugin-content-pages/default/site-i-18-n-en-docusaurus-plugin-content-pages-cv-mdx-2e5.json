@@ -1,0 +1,11 @@
+{
+  "type": "mdx",
+  "permalink": "/en/cv",
+  "source": "@site/i18n/en/docusaurus-plugin-content-pages/cv.mdx",
+  "title": "CV",
+  "description": "- CentraleSupélec  (P27)",
+  "frontMatter": {
+    "title": "CV"
+  },
+  "unlisted": false
+}

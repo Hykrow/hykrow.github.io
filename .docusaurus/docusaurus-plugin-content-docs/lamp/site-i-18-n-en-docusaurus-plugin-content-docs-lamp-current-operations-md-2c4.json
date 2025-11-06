@@ -1,0 +1,28 @@
+{
+  "id": "operations",
+  "title": "Implementation details - operations",
+  "description": "Here we detail the basic operations. Also available in more detail here.",
+  "source": "@site/i18n/en/docusaurus-plugin-content-docs-lamp/current/operations.md",
+  "sourceDirName": ".",
+  "slug": "/operations",
+  "permalink": "/en/lamp/operations",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": null,
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Implementation details - operations",
+    "sidebar_position": 4
+  },
+  "sidebar": "lampSidebar",
+  "previous": {
+    "title": "Implementation Details - Tensors",
+    "permalink": "/en/lamp/tenseurs_impl"
+  },
+  "next": {
+    "title": "Autodiff graphs",
+    "permalink": "/en/lamp/graphe"
+  }
+}

@@ -3,46 +3,6 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/blog',
-    component: ComponentCreator('/blog', '316'),
-    exact: true
-  },
-  {
-    path: '/blog/2025/11/03/moteur-autodiff',
-    component: ComponentCreator('/blog/2025/11/03/moteur-autodiff', '4e7'),
-    exact: true
-  },
-  {
-    path: '/blog/archive',
-    component: ComponentCreator('/blog/archive', '182'),
-    exact: true
-  },
-  {
-    path: '/blog/tags',
-    component: ComponentCreator('/blog/tags', '287'),
-    exact: true
-  },
-  {
-    path: '/blog/tags/autodiff',
-    component: ComponentCreator('/blog/tags/autodiff', 'bff'),
-    exact: true
-  },
-  {
-    path: '/blog/tags/rust',
-    component: ComponentCreator('/blog/tags/rust', '3cc'),
-    exact: true
-  },
-  {
-    path: '/blog/tags/tensor',
-    component: ComponentCreator('/blog/tags/tensor', '3f2'),
-    exact: true
-  },
-  {
-    path: '/blog/tags/vjp',
-    component: ComponentCreator('/blog/tags/vjp', '2da'),
-    exact: true
-  },
-  {
     path: '/contact',
     component: ComponentCreator('/contact', 'b83'),
     exact: true
@@ -69,25 +29,19 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '3f5'),
+    component: ComponentCreator('/docs', 'e45'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'b77'),
+        component: ComponentCreator('/docs', 'cc7'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '52a'),
+            component: ComponentCreator('/docs', '885'),
             routes: [
               {
-                path: '/docs/intro',
-                component: ComponentCreator('/docs/intro', '9a7'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/roadmap',
-                component: ComponentCreator('/docs/roadmap', '510'),
+                path: '/docs/aa',
+                component: ComponentCreator('/docs/aa', 'e12'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }
@@ -99,16 +53,28 @@ export default [
   },
   {
     path: '/lamp',
-    component: ComponentCreator('/lamp', 'd3c'),
+    component: ComponentCreator('/lamp', '4ba'),
     routes: [
       {
         path: '/lamp',
-        component: ComponentCreator('/lamp', '4f4'),
+        component: ComponentCreator('/lamp', '427'),
         routes: [
           {
             path: '/lamp',
-            component: ComponentCreator('/lamp', '0ee'),
+            component: ComponentCreator('/lamp', '80a'),
             routes: [
+              {
+                path: '/lamp/conclusion',
+                component: ComponentCreator('/lamp/conclusion', 'a87'),
+                exact: true,
+                sidebar: "lampSidebar"
+              },
+              {
+                path: '/lamp/construction',
+                component: ComponentCreator('/lamp/construction', 'fb5'),
+                exact: true,
+                sidebar: "lampSidebar"
+              },
               {
                 path: '/lamp/gradients',
                 component: ComponentCreator('/lamp/gradients', '502'),
@@ -128,8 +94,32 @@ export default [
                 sidebar: "lampSidebar"
               },
               {
-                path: '/lamp/tenseurs',
-                component: ComponentCreator('/lamp/tenseurs', '3ba'),
+                path: '/lamp/operations',
+                component: ComponentCreator('/lamp/operations', '433'),
+                exact: true,
+                sidebar: "lampSidebar"
+              },
+              {
+                path: '/lamp/tenseurs_impl',
+                component: ComponentCreator('/lamp/tenseurs_impl', 'e5f'),
+                exact: true,
+                sidebar: "lampSidebar"
+              },
+              {
+                path: '/lamp/tenseurs_math',
+                component: ComponentCreator('/lamp/tenseurs_math', 'ad2'),
+                exact: true,
+                sidebar: "lampSidebar"
+              },
+              {
+                path: '/lamp/train',
+                component: ComponentCreator('/lamp/train', 'd2c'),
+                exact: true,
+                sidebar: "lampSidebar"
+              },
+              {
+                path: '/lamp/utils',
+                component: ComponentCreator('/lamp/utils', '240'),
                 exact: true,
                 sidebar: "lampSidebar"
               }

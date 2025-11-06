@@ -3,7 +3,7 @@
   "permalink": "/interets",
   "source": "@site/src/pages/interets.mdx",
   "title": "Intérêts",
-  "description": "- IA/ML, graph learning, systèmes dynamiques",
+  "description": "- IA/ML, graphs, algorithmie",
   "frontMatter": {
     "title": "Intérêts"
   },

@@ -1,0 +1,28 @@
+{
+  "id": "graphe",
+  "title": "Autodiff graphs",
+  "description": "We were able to implement the basic operations ! Well done:)",
+  "source": "@site/i18n/en/docusaurus-plugin-content-docs-lamp/current/graphe.md",
+  "sourceDirName": ".",
+  "slug": "/graphe",
+  "permalink": "/en/lamp/graphe",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": null,
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "Autodiff graphs",
+    "sidebar_position": 5
+  },
+  "sidebar": "lampSidebar",
+  "previous": {
+    "title": "Implementation details - operations",
+    "permalink": "/en/lamp/operations"
+  },
+  "next": {
+    "title": "Gradients & backward pass on the graph",
+    "permalink": "/en/lamp/gradients"
+  }
+}

@@ -14,7 +14,8 @@ export default {
   "i18n": {
     "defaultLocale": "fr",
     "locales": [
-      "fr"
+      "fr",
+      "en"
     ],
     "path": "i18n",
     "localeConfigs": {}
@@ -25,8 +26,8 @@ export default {
       "onBrokenMarkdownLinks": "warn",
       "onBrokenMarkdownImages": "throw"
     },
+    "mermaid": true,
     "format": "mdx",
-    "mermaid": false,
     "emoji": true,
     "mdx1Compat": {
       "comments": true,
@@ -46,6 +47,9 @@ export default {
       "href": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=IBM+Plex+Mono:wght@300;400;500;600&display=swap",
       "rel": "stylesheet"
     }
+  ],
+  "themes": [
+    "@docusaurus/theme-mermaid"
   ],
   "presets": [
     [
@@ -82,9 +86,22 @@ export default {
       "defaultMode": "light",
       "disableSwitch": false
     },
+    "mermaid": {
+      "theme": {
+        "light": "neutral",
+        "dark": "dark"
+      },
+      "options": {}
+    },
     "navbar": {
       "title": "Accueil",
       "items": [
+        {
+          "type": "localeDropdown",
+          "position": "right",
+          "dropdownItemsBefore": [],
+          "dropdownItemsAfter": []
+        },
         {
           "to": "/projects",
           "label": "Projets",
@@ -103,7 +120,14 @@ export default {
         {
           "to": "/interets",
           "label": "Intérêts",
-          "position": "right"
+          "position": "right",
+          "locale": "fr"
+        },
+        {
+          "to": "/interets",
+          "label": "Interests",
+          "position": "right",
+          "locale": "en"
         }
       ],
       "hideOnScroll": false
@@ -376,7 +400,6 @@ export default {
     "static"
   ],
   "customFields": {},
-  "themes": [],
   "scripts": [],
   "headTags": [],
   "clientModules": [],
